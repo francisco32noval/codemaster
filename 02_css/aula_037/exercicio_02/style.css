@@ -1,0 +1,67 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+div{
+    text-align: justify;
+    border: 1px solid black;
+    margin: 20px auto;
+    width: 350px;
+    height: 250px;
+}
+
+
+
+/* Divs 1 sessao */
+
+#div_1{
+    background-color: red;
+    margin-bottom: 100px;
+}
+
+#div_2{
+    background-color: green;
+    overflow: auto;
+}
+
+#div_3{
+    background-color: blue;
+    overflow: scroll;
+}
+
+
+
+/* Divs 2 sessao */
+
+
+.bob{
+    border: 1px solid black;
+    height: 350px;
+}
+
+
+#div_4{
+    background-color: pink;
+    margin-bottom: 200px;
+}
+
+#div5{
+    background-color: yellowgreen;
+    overflow: auto;
+}
+
+#div6{
+    background-color: cyan;
+    overflow-x: auto;
+}
+
+#div7{
+    background-color: orange;
+    overflow-y: auto;
+}
+
+#div8{
+    background-color: purple;
+    overflow: hidden;
+}

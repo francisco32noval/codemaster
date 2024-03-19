@@ -1,0 +1,292 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+
+
+
+/* HEADER Á DIREITA */
+#header{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+}
+
+
+#header-1{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+}
+
+#header-1 div{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0px 10px;
+}
+
+#gmail, #img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header-1 a{
+    text-decoration: none;
+    color: black;
+}
+
+#apps{
+    margin: auto;
+    width: fit-content;
+    height: 30px;
+}
+
+#user{
+    margin: auto;
+    width: fit-content;
+    height: 50px;
+    margin-left: -20px;
+}
+
+/* HOVER HEADER */
+
+#header-1 a:hover{
+    text-decoration: underline;
+}
+
+
+/* GOOGLE */
+
+
+#google{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 230px;
+    margin-bottom: 25px;
+}
+
+#google img{
+    width: 272px;
+}
+
+
+/* MAIN */
+
+
+#main{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto ;
+    row-gap: 35px;
+    column-gap: 15px;
+    box-sizing: border-box;
+}
+
+
+
+#main div{
+
+    gap: 20px;
+    height: 50px;
+}
+
+
+#main div:nth-child(1){
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+#main div:nth-child(2){
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+#main div:nth-child(3){
+    grid-column-start: 3;
+    grid-row-start: 2;
+}
+
+
+#main div:nth-child(4){
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+}
+
+
+
+/* BARRA PESQUISA */
+
+
+
+#main_bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    border: 1px solid gray;
+    border-radius: 30px;
+    width: 750px;
+    margin: 0px auto;
+}
+
+#main_bar:hover{
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 28%);
+    border-color: rgba(223, 225, 229, 0);
+}
+
+#lupa{
+    width: 30px;
+    height: 20px;
+    background-image: url('imagens/lupa.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* barra pesquisa */
+#main_input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+#input{
+    border: 0px solid white;
+    width: 560px;
+    height: 40px;
+    font-size: 20px;
+}
+
+
+#main_input input:focus{
+    outline: 0px solid white;
+}
+
+#mic_tec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input_icon{
+    width: 30px;
+}
+
+/* Buttons Main */
+
+#butt-main{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+#butt-main-2{
+    display: flex;
+    align-items: center;
+}
+
+.size_butt{
+    background-color: rgb(248 249 250);
+    border: 1px solid rgb(248, 249, 250);
+    border-radius: 4px;
+    color: rgb(60, 64, 67);
+    font-size: 16px;
+    padding: 2px 15px;
+    height: 36px;
+    cursor: pointer;
+}
+
+.size_butt:hover{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 10%);
+    background-color: rgb(248, 249, 250);
+    border: 1px solid rgb(218, 220, 224);
+}
+
+#center_h5{
+    text-align: center;
+    margin-top: -20px;
+}
+
+#center_h5 a{
+    text-decoration: none;
+}
+
+
+/* Empty space */
+
+#empty{
+    height: 120px;
+}
+
+
+/* FOOTER */
+
+/* #footer *{
+    border: 1px solid black;
+} */
+
+#footer{
+    background-color: rgb(240, 240, 240);
+    height: 250px;
+}
+
+
+#footer div:nth-child(1){
+    color: rgb(60, 64, 67);
+    font-size: 17px;
+    padding: 20px 20px 5px 10px;
+    text-align: left;
+}
+
+#footer img{
+    width: 15px;
+}    
+
+#footer a{
+    text-decoration: none;
+    color: rgb(57, 57, 57);
+    font-size: 15px;
+    padding: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+#footer a:hover{
+    text-decoration: underline;
+}
+
+#footer-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+    height: 50%;
+    padding: 20px;
+}
+
+#footer-1 div:nth-child(1){
+    width: 100%;
+    text-align: center;
+    margin-top: -20px;
+}
+
+#footer-1 div:nth-child(1):hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.links{
+    margin-bottom: 0px;
+}

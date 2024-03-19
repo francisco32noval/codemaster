@@ -1,0 +1,109 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1, h3{
+    text-align: center;
+}
+
+div{
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 15px auto;
+    width: 400px;
+    height: 350px;
+}
+
+
+/* Uma só direção */
+
+#div-1{
+    background: radial-gradient( cyan, gray, lightgreen);
+}
+
+#div-2{
+    background: radial-gradient(closest-side, cyan, gray, lightgreen);
+}
+
+#div-3{
+    background: radial-gradient(closest-corner, cyan, gray, lightgreen);
+}
+
+#div-4{
+    background: radial-gradient(farthest-side, cyan, gray, lightgreen);
+}
+
+#div-5{
+    background: radial-gradient(farthest-corner, cyan, gray, lightgreen);
+}
+
+
+/* Duas direções */
+
+
+
+#div-6{
+    background: radial-gradient(circle at top left, yellow, red, black);
+}
+
+#div-7{
+    background: radial-gradient(circle at top right, yellow, red, black);
+}
+
+#div-8{
+    background: radial-gradient(circle at bottom left, yellow, red, black);
+}
+
+#div-9{
+    background: radial-gradient(circle at bottom right, yellow, red, black);
+}
+
+
+
+/* Angulo DEG */
+
+
+
+#div-10{
+    background: radial-gradient(circle at 50% 0%, green, pink);
+}
+
+#div-11{
+    background: radial-gradient(circle at 68% 75%, green, pink);
+}
+
+
+
+/* Ellipse */
+
+
+
+#div-12{
+    background: radial-gradient(ellipse at 68% 75%, violet, blue, brown, white);
+}
+
+
+
+
+/* Angulo PERCENTAGEM */
+
+#div-13{
+    background: radial-gradient( orange 0% 33%, purple 33% 66%, aqua 66% 100%);
+}
+
+/* Vários linear gradient */
+
+#div-14{
+    background: 
+        radial-gradient( rgba(255, 140, 100, 35%), rgba(100, 200, 20, 35%), rgba(150, 50, 255, 35%)),
+        radial-gradient( green, blue, black); 
+}
+
+
+/* Radial-gradient com linear-gradient */
+
+#div-15{
+    background: 
+        linear-gradient( rgba(255, 140, 100, 35%), rgba(100, 200, 20, 35%), rgba(150, 50, 255, 35%)),
+        radial-gradient( rgba(255, 255, 0, 0.219) 0% 33.3%, rgba(0, 0, 0, 0.396) 66.6% 100%);
+}

@@ -1,0 +1,109 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1, h3{
+    text-align: center;
+}
+
+div{
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 15px auto;
+    width: 500px;
+    height: 400px;
+}
+
+
+/* Uma só direção */
+
+#div-1{
+    background: linear-gradient(to left, cyan, gray, lightgreen);
+}
+
+#div-2{
+    background: linear-gradient(to right, cyan, gray, lightgreen);
+}
+
+#div-3{
+    background: linear-gradient(to top, cyan, gray, lightgreen);
+}
+
+#div-4{
+    background: linear-gradient(to bottom, cyan, gray, lightgreen);
+}
+
+
+
+/* Duas direções */
+
+#div-5{
+    background: linear-gradient(to top left, yellow, red, black);
+}
+
+#div-6{
+    background: linear-gradient(to top right, yellow, red, black);
+}
+
+#div-7{
+    background: linear-gradient(to bottom left, yellow, red, black);
+}
+
+#div-8{
+    background: linear-gradient(to bottom right, yellow, red, black);
+}
+
+
+/* Angulo DEG */
+
+#div-9{
+    background: linear-gradient(35deg, green, pink);
+}
+
+#div-10{
+    background: linear-gradient(74deg, green, pink);
+}
+
+
+
+/* Angulo TURN */
+
+#div-11{
+    background: linear-gradient(0.35turn, violet, blue);
+}
+
+#div-12{
+    background: linear-gradient(0.74turn, violet, blue);
+}
+
+
+/* Angulo PERCENTAGEM */
+
+#div-13{
+    background: linear-gradient(to left, orange 0% 33%, purple 33% 66%, aqua 66% 100%);
+}
+
+#div-14{
+    background: linear-gradient(to top, orange 0% 33%, purple 33% 66%, aqua 66% 100%);
+}
+
+#div-15{
+    background: linear-gradient(to bottom left, orange 0% 33%, purple 33% 66%, aqua 66% 100%);
+}
+
+
+/* Vários linear gradient */
+
+#div-16{
+    background: 
+        linear-gradient(to bottom, rgba(255, 140, 100, 35%), rgba(100, 200, 20, 35%), rgba(150, 50, 255, 35%)),
+        linear-gradient(to top, green, blue, black); 
+}
+
+
+
+
+
+
+
+

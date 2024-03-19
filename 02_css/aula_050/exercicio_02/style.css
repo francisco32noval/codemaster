@@ -1,0 +1,116 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+body > div{
+    border: 5px solid black;
+    background-color: lightgreen;
+    width: 350px;
+    height: 400px;
+    margin: 40px auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.filho{
+    background-color: lightsalmon;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+
+#pai-2{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#pai-3{
+    display: grid;
+    grid-template-columns: auto auto 50%;
+}
+
+
+#pai-4{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+#pai-4 .filho-1{
+    grid-column-start: 2;
+}
+
+#pai-4 .filho-9{
+    display: none;
+}
+
+
+
+#pai-5{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+#pai-5 .filho-1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#pai-5 .filho-9{
+    display: none;
+}
+
+
+#pai-6{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+#pai-6 .filho-1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#pai-6 .filho-9{
+    display: none;
+}
+
+#pai-7{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+#pai-7 .filho-1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#pai-7 .filho-9, #pai-7 .filho-8, #pai-7 .filho-7{
+    display: none;
+}
+
+
+#pai-8{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#pai-8{
+    gap: 20px;
+}
+
+
+#pai-9{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+}
+
+#pai-9 .filho-1{
+    grid-column-start: 3;
+    grid-row-start: 3;
+}

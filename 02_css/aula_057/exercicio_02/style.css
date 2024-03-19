@@ -1,0 +1,34 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.especial{
+    width: 400px;
+    padding: 20px 50px;
+    margin: 40px auto;
+    border: 5px solid black;
+    border-radius: 30px;
+    display: block;
+    background-color: green;
+}
+
+
+
+@media all and (width > 750px){
+
+    #div-1{background-color: blue;}
+
+    #div-3{display: none;}
+}
+
+
+@media all and (width <= 750px){
+
+    .especial{background-color: green;}
+
+    #div-1{display: none;}
+
+    #div-3{background-color: red;}
+}
+

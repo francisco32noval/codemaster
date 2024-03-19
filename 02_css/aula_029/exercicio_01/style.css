@@ -1,0 +1,26 @@
+body{
+    background-color: darkgrey;
+}
+
+#neve{
+    background-image: url("neve.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 350px;
+    border-radius: 20px;
+}
+
+#praia{
+    background-image: url("praia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 350px;
+    border-radius: 20px;
+}
+
+.centrado{
+    text-align: center;
+}
+

@@ -1,0 +1,180 @@
+:root{
+    --main-color: rgb(15, 116, 15) ;
+    --border-hover: rgba(255, 255, 0, 0.75);
+    --border-color: rgb(0, 150, 0);
+    --back-color: rgba(0, 255, 0, 0.25);
+    --back-hover: rgba(255 255, 0, 0.75);
+}
+
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin: 0px;
+    text-align: center;
+    
+    background-color: black;
+}
+
+
+/* HEADER */
+
+
+header{
+    background-color: var(--main-color);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+nav{
+    border: 3px solid white;
+    width: 50%;
+    margin: 10px auto;
+    margin-bottom: 25px;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 20px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    transition: 0.8s;
+}
+
+nav a:hover{
+    color: var(--back-hover);
+}
+
+
+
+/* MAIN */
+
+
+main{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    border: 3px solid var(--border-color);
+    background-color:  var(--back-color);
+    width: 300px;
+    border-radius: 20px;
+
+    margin: 25px 20px;
+    transition-duration: 0.8s;
+}
+
+img{
+    width: 100%;
+    height: 420px;
+}
+
+.card:hover{
+    border: 3px solid var(--border-hover);
+    background-color: var(--back-hover);
+    cursor: pointer;
+}
+
+#especial{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+/* PAIXAO DE CRISTO */
+
+/* #main-cristo *{
+    border: 1px solid white;
+} */
+
+
+#div_cristo{
+    margin: 20px auto;
+    width: 40%;
+    height: 100%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#div_cristo > div{
+    margin: 10px;
+}
+
+#div_cristo img{
+    border: 3px solid var(--border-color);
+    border-radius: 10px;
+}
+
+#div_cristo a{
+    text-decoration: none;
+    color: white;
+    background-color: var(--back-color);
+    border: 3px solid var(--border-color);
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 60px;
+    font-size: 20px;
+    transition-duration: 0.8s;
+}
+
+
+#div_cristo a:hover{
+    background-color: var(--back-hover);
+    border: 3px solid var(--border-hover);
+}
+
+
+
+/* FOOTER */
+
+
+footer{
+    background-color: var(--main-color);
+    padding: 15px;
+}
+
+
+
+/* ECRA MENOR QUE 800PX */
+
+@media all and (width <= 800px){
+
+    nav{
+        width: 90%;
+    }
+
+    .card{
+        border: 3px solid rgb(255, 0, 0);
+        background-color: rgba(255, 0, 0, 25%);
+        border-radius: 0px;
+        transition-duration: 0.8s;
+    }
+
+    .card span{
+        display: none;
+    }
+
+    .card:hover{
+        border: 3px solid rgb(255, 255, 0);
+        background-color: rgba(255 255, 0, 0.75);
+    }
+}

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Input</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <h1>Exemplos de Inputs + Labels</h1>
+
+        <hr>
+
+        <form>
+
+            <!-- Input de Texto -->
+
+            <label for="text">Texto:</label>
+            <input type="text" id="Texto">
+
+            <br><br>
+
+            <label for="text-1">Texto:</label>
+            <input type="text" id="Texto-1" placeholder="Texto fictício">
+
+            <br><br>
+
+            <label for="text-2">Texto:</label>
+            <input type="text" id="Texto-2" value="Texto pré-digitado">
+
+            <br><br>
+
+            <label for="text-3">Texto:</label>
+            <input type="text" id="Texto-3" disabled value="Campo desabilitado">
+
+            <br><br>
+
+            <label for="text-4">Texto:</label>
+            <input type="text" id="Texto-4" value="Texto fixo" readonly>
+
+            <br><br>
+
+            <label for="text-5">Texto:</label>
+            <input type="text" id="Texto-5" minlength="3" maxlength="6" placeholder="3 a 6 caracteres">
+
+            <br><br>
+
+            <label for="text-6">Texto:</label>
+            <input type="text" id="Texto-6" placeholder="Campo obrigatório" required>
+
+            <br>
+            <br>
+            <hr>
+            <br>
+
+
+            <!-- Input de numero -->
+
+            <label for="numero-1">Número 1:</label>
+            <input type="number" id="numero-1">
+
+            <br><br>
+
+            <label for="numero-2">Número 2:</label>
+            <input type="number" id="numero-2" step="2">
+
+            <br><br>
+
+            <label for="numero-3">Número 3:</label>
+            <input type="number" id="numero-3" step="0.01">
+
+            <br><br>
+
+            <label for="numero-4">Número 4:</label>
+            <input type="number" id="numero-4" min="1" max="10">
+
+            <br>
+            <br>
+            <hr>
+            <br>
+
+
+            <!-- Input Senha - Mail - Link - Contacto - File -->
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha">
+
+            <br><br>
+
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail">
+
+            <br><br>
+
+            <label for="url">URL:</label>
+            <input type="url" id="link">
+
+            <br><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone">
+
+            <br><br>
+
+            <label for="ficheiro">Ficheiro:</label>
+            <input type="file" id="ficheiro" >
+
+            <br>
+            <br>
+            <hr>
+            <br>
+
+
+            <!-- Input barra de volume -->
+
+            <label for="range-1">Range 1:</label>
+            <input type="range" id="range-1">
+
+            <br><br>
+
+            <label for="range-2">Range 2:</label>
+            <input type="range" id="range-2" value="0">
+
+            <br>
+            <br>
+            <hr>
+            <br>
+
+
+            <!-- Input Checkbox -->
+
+            <label for="checkbox-1">Checkbox 1: a)</label>
+            <input type="checkbox" id="checkbox-1">
+
+            <label for="checkbox-1">b)</label>
+            <input type="checkbox" id="checkbox-b">
+
+            <label for="checkbox-1">c)</label>
+            <input type="checkbox" id="checkbox-c">
+            
+
+            <br><br>
+
+            <label for="checkbox-2">Checkbox 2: a)</label>
+            <input type="checkbox" id="checkbox-a" checked>
+
+            <label for="checkbox-2">b)</label>
+            <input type="checkbox" id="checkbox-b">
+
+            <label for="checkbox-2">c)</label>
+            <input type="checkbox" id="checkbox-c" disabled>
+
+            <br><br>
+
+            <label for="radio-1">Radio 1: a)</label>
+            <input type="radio" id="radio-1" name="radio">
+
+            <label for="radio-2">b)</label>
+            <input type="radio" id="radio-2" checked name="radio">
+
+            <label for="radio-3">c)</label>
+            <input type="radio" id="radio-3" name="radio">
+
+            <br>
+            <br>
+            <hr>
+            <br>
+
+
+            <!-- Input Cores -->
+
+            <label for="cor-1">Cor 1:</label>
+            <input type="color" id="cor-1">
+
+            <br><br>
+
+            <label for="cor-3">Cor 2:</label>
+            <input type="color" id="cor-2" value="#FF0000">
+
+            <br>
+            <br>
+            <hr>
+            <br>
+
+
+            <!-- Input Datas -->
+
+            <label for="data-1">Data 1:</label>
+            <input type="date" id="data-1">
+
+            <br><br>
+
+            <label for="data-2">Data 2:</label>
+            <input type="date" id="data-2" value="2024-10-31">
+
+            <br><br>
+
+            <label for="data-3">Data 3:</label>
+            <input type="date" id="data-3" min="2024-10-01" max="2024-10-31">
+
+            <br><br>
+
+            <label for="data-4">Data 4:</label>
+            <input type="date" id="data-4" step="2">
+
+            <br>
+            <br>
+            <hr>
+            <br>
+
+
+            <!-- Input Mês -->
+
+            <label for="mes-1">Mês 1:</label>
+            <input type="month" id="mes-1">
+
+            <br><br>
+
+            <label for="mes-2">Mês 2:</label>
+            <input type="month" id="mes-2" value="2005-06">
+
+            <br><br>
+
+            <label for="mes-3">Mês 3:</label>
+            <input type="month" id="mes-3" min="2024-07" max="2024-12">
+
+            <br><br>
+
+            <label for="mes-4">Mês 4:</label>
+            <input type="month" id="mes-4" step="2">
+
+            <br>
+            <br>
+            <hr>
+            <br>
+
+
+            <!-- Input Horas -->
+
+            <label for="hora-1">Hora 1:</label>
+            <input type="time" id="hora-1">
+
+            <br><br>
+
+            <label for="hora-2">Hora 2:</label>
+            <input type="time" id="hora-2" value="21:05">
+
+            <br><br>
+
+            <label for="hora-3">Hora 3:</label>
+            <input type="time" id="hora-3" min="20:00" max="21:00">
+
+            <br><br>
+
+            <label for="hora-4">Hora 4:</label>
+            <input type="time" id="hora-4" step="1"> 
+
+            <br><br>
+
+            <label for="hora-5">Hora 5:</label>
+            <input type="time" id="hora-5" step="300">
+
+            <br><br>
+
+            <label for="hora-6">Hora 6:</label>
+            <input type="time" id="hora-6" step="3600">
+
+            <br>
+            <br>
+            <hr>
+            <br>
+
+
+            <!-- Input Data e Hora -->
+
+            <label for="data.hora-1">Data e hora 1:</label>
+            <input type="datetime-local" id="data.hora-1">
+
+            <br><br>
+
+            <label for="data.hora-1">Data e hora 2:</label>
+            <input type="datetime-local" id="data.hora-2" step="1">
+
+            <br><br>
+
+            <label for="data.hora-1">Data e hora 3:</label>
+            <input type="datetime-local" id="data.hora-3" value="2024-10-31 14:35:05">
+
+            <br>
+            <br>
+            <hr>
+            <br>
+
+
+            <!-- Input Submit e Reset -->
+
+            <input type="submit" id="enviar" value="Enviar!">
+            <input type="reset" value="Reset">
+        </form>
+        
+    </body>
+
+</html>

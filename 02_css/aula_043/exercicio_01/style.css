@@ -1,0 +1,134 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+div{
+    background-color: lightgreen;
+    text-align: justify;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    border: 3px solid black;
+}
+
+.center{
+    text-align: center;
+}
+
+
+/* Hover */
+
+#hover-1:hover{
+    background-color: blueviolet;
+} 
+
+#hover-2:hover{
+    background-color: blueviolet;
+    transition-duration: 700ms;
+} 
+
+
+/* Active */
+
+#active-1:active{
+    background-color: brown;
+}
+
+#active-2:active{
+    background-color: brown;
+    transition-duration: 700ms;
+}
+
+
+/* Focus */
+
+#focus-1 input:focus{
+    /* background-color: black; */
+    outline: 2px solid red;
+}
+
+
+#focus-2 input{transition-duration: 700ms; outline: 2px solid white;}
+#focus-2 input:focus{
+    outline: 2px solid red;
+}
+
+/* Visited Link */
+
+
+#link_1 a:visited{
+    color: white;
+}
+
+#link_1 a:link{
+    color: red;
+}
+
+/* first-child last-child nth-child() */
+
+#first button:first-child{
+    background-color: red;
+}
+
+#last button:last-child{
+    background-color: red;
+}
+
+#mid button:nth-child(3){
+    background-color: red;
+}
+
+#odd button:nth-child(odd){
+    background-color: red;
+    margin: 10px;
+}
+
+#even button:nth-child(even){
+    background-color: red;
+    margin: 10px;
+}
+
+#n-3 button:nth-child(3n){
+    background-color: red;
+    margin: 10px;
+}
+
+
+/* Lang */
+
+#lang-1:lang(pt){
+    background-color: red;
+}
+
+
+/* outras */
+
+
+#fill input:autofill{
+    border: 2px solid red;
+}
+
+
+#disabled input:disabled{
+    border: 2px solid red;
+}
+
+#enabled input:enabled{
+    border: 2px solid red;
+}
+
+#read-only input:read-only{
+    background-color: bisque;
+}
+
+#placeholder input:placeholder-shown{
+    background-color: bisque;
+}
+
+#check input:checked{
+    outline: 2px solid red;
+}

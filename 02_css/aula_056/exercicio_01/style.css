@@ -1,0 +1,180 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+#envio{
+    background-color: black;
+    color: white;
+    font-size: 0.75rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    margin: 0px;
+}
+
+#titulo{
+    font-size: 40px;
+    color: white;
+    background-color: rgb(190, 190, 190);
+    padding: 15px;
+}
+
+
+
+
+/* BARRA MENU */
+#barra{
+
+    background-color: black;
+    padding: 15px;
+    font-size: 20px;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#barra{
+    background-color: black;
+    height: 50px;
+}
+
+
+#barra a{
+    text-decoration: none;
+    color: white;
+    margin: 0px 20px;
+    height: 35px;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+
+
+#breve{
+    font-size: 10px;
+    color: rgb(125, 125, 125);
+    width: 80px;
+    margin: 0px auto;
+    display: none;
+}
+
+a{
+    transition: 0.8s;
+}
+
+#barra a:hover{
+    background-color: white;
+    color:black;
+}
+
+#brinde:hover + #breve{
+    display: block;
+}
+
+
+/* CONTEUDO */
+
+
+#conteudo{
+    background-color: rgb(190, 190, 190);
+    color: white;
+}
+
+h2{
+    padding-top: 15px;
+}
+
+/* SURPRESAS */
+
+
+#surpresas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    gap: 10px;
+    background-color: rgb(120, 0, 0);
+    box-sizing: border-box;
+}
+
+.surpresa{
+    border: 1px solid white;
+    padding: 10px;
+    width: 200px;
+    height: 300px;
+    margin: 15px;
+}
+
+#desconto{
+    width: 190px;
+    background-color: white;
+    border-radius: 30px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+#surpresas > .surpresa:hover ~ #desconto{
+    color: black;
+    transition-duration: 0.8s;
+}
+
+
+
+
+.surpresa:hover{
+    cursor: pointer;
+}
+
+
+.surpresa-1:hover{
+    background-image: url("joia-1.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+}
+
+.surpresa-2:hover{
+    background-image: url("joia-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+}
+
+
+.surpresa-3:hover{
+    background-image: url("joia-3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+}
+
+
+.surpresa-4:hover{
+    background-image: url("joia-4.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+}
+
+.surpresa-5:hover{
+    background-image: url("joia-5.avif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: black;
+}
+
+
+/* QUEM SOMOS */
+
+
+p{
+    text-align: justify;
+    padding: 10px;
+}

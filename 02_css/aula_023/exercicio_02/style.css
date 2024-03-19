@@ -1,0 +1,19 @@
+body{
+    background-image: url("porto_01.jpg");
+    background-size: 100% 100%;
+    background-repeat: repeat;
+    height: 500px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3{
+    color: white;
+    background-color: blue;
+}
+
+p{
+    border: 10px groove yellow;
+    background-color: red;
+    text-align: justify;
+}

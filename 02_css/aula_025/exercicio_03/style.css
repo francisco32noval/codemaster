@@ -1,0 +1,20 @@
+div{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.aquamarine{
+    background-color: aquamarine;
+    color: black;
+}
+
+.rebeccapurple{
+    background-color: rebeccapurple;
+    color: violet;
+    text-align: center;
+}
+
+.coral{
+    background-color: coral;
+    color: black;
+    text-align: right;
+}

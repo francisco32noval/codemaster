@@ -1,0 +1,106 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    background-color: beige;
+}
+
+.animation{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    border-radius: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+    position: relative;
+
+}
+
+@keyframes deslizar{
+    
+    from{
+        left: 0px;
+    }
+
+    to{
+        left: 500px;
+    }
+}
+
+@keyframes colorir {
+    
+    0%{
+        background-color: red;
+    }
+
+    50%{
+        background-color: orange;
+    }
+
+    100%{
+        background-color: yellow;
+    }
+}
+
+@keyframes rodar{
+
+    from{
+        /* left: 0px; */
+        transform: rotate(0deg);
+    }
+
+    to{
+        /* left: 500px; */
+        transform: rotate(360deg);
+    }
+}
+
+#div-1{
+    animation: 
+        deslizar 2s, 
+        colorir 2s;
+}
+
+
+#div-2{
+    animation: 
+        deslizar 2s forwards, 
+        colorir 2s forwards;
+}
+
+#div-3{
+    animation: 
+        deslizar 2s forwards infinite, 
+        colorir 2s forwards infinite;
+}
+
+#div-4{
+    animation: 
+        deslizar 2s forwards infinite alternate, 
+        colorir 2s forwards infinite alternate;
+}
+
+#div-5{
+    animation: 
+        deslizar 2s forwards infinite alternate linear, 
+        colorir 2s forwards infinite alternate linear;
+}
+
+#div-6{
+    animation: 
+        deslizar 2s forwards infinite alternate linear 5s, 
+        colorir 2s forwards infinite alternate linear 5s;
+}
+
+#div-7{
+    animation: 
+        deslizar 2s forwards infinite alternate linear 2s, 
+        colorir 2s forwards infinite alternate linear 2s,
+        rodar 2s forwards infinite alternate linear 2s;
+}

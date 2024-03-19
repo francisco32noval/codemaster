@@ -1,0 +1,34 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+body > div{
+    border: 3px solid black;
+    background-color: lightgreen;
+    width: 600px;
+    height: 250px;
+    margin: 40px auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.filho{
+    background-color: lightcoral;
+    border: 1px solid black;
+}
+
+#pai-2 .filho{
+    display: inline;
+}
+
+#pai-3 .filho{
+    display: inline-block;
+    padding: 15px;
+    width: 150px;
+    height: 50px;
+}
+
+#pai-4 .filho{
+    display: none;
+}

@@ -1,0 +1,46 @@
+body{
+    background-color: aqua;
+    text-align: center;
+    margin: 0px;
+}
+
+#sol{
+    width: 120px;
+}
+
+.nuvens{
+    width: 60px;
+    margin: 10px 400px;
+}
+
+/* Árvores */
+
+.pequenas{
+    width: 100px;
+    margin: 0px 30px;
+}
+
+.media{
+    width: 150px;
+}
+
+.mini{
+    width: 60px;
+}
+
+
+
+.terra{
+    background-color: rgb(112, 58, 29);
+    height: 180px;
+    margin-top: -40px;
+}
+
+p{
+    color: white;
+    text-align: left;
+    font-size: 20px;
+    padding-top: 120px;
+    padding-left: 50px;
+}
+

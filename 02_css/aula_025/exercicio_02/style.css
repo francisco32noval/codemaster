@@ -1,0 +1,13 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sem_div{
+    border: 3px solid black;
+    background-color: red;
+}
+
+div{
+    border: 3px solid black;
+    background-color: red;
+}

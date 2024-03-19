@@ -1,0 +1,34 @@
+h1, h3{
+    text-align: center;
+}
+
+#paragrafo_1{
+    border: 3px dotted red;
+}
+
+span{
+    background-color: greenyellow;
+    padding: 20px 0px 0px 20px;
+    margin-left: 100px;
+}
+
+#paragrafo_2{
+    border: 15px inset green;
+    padding: 30px 0px;
+}
+
+.geral{
+    border: 3px solid red;
+    background-color: pink;
+    border-radius: 50px;
+    text-align: center;
+}
+
+
+#div_2{
+    margin-top: 50px;
+}
+
+#div_3{
+    margin-top: -20px;
+}

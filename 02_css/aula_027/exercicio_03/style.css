@@ -1,0 +1,31 @@
+h1, h3{
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+}
+
+.sem_margin{
+    background-color: orange;
+    width: 500px;
+}
+
+.com_margin{
+    margin: auto;
+    background-color: blue;
+    color: white;
+    width: 500px;
+}
+
+.normal{
+    background-color: red;
+}
+
+.negativa{
+    background-color: green;
+    color: white;
+    margin-top: -50px;
+    margin-left: 50px;
+    width: 500px;
+}

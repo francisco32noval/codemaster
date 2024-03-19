@@ -1,0 +1,15 @@
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#texto-5{
+    resize: horizontal;
+}
+
+#texto-6{
+    resize: vertical;
+}
+
+#texto-7{
+    resize: none;
+}

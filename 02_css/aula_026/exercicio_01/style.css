@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+}
+
+p{
+    text-align: left;
+}
+
+.span_1{
+    background-color: aquamarine;
+}
+
+.span_2{
+    border: 5px solid red;
+    background-color: rebeccapurple;
+    color: violet;
+}
+
+.span_3{
+    border: 3px dotted aquamarine;
+    background-color: coral;
+    border-radius: 10px;
+}
