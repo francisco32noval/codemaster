@@ -6,8 +6,6 @@ print('\n')
 
 funcoes.codemaster()
 
-funcoes.limpar()
-
 
 print('\n')
 
