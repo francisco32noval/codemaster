@@ -4,6 +4,9 @@ import os
 
 
 def codemaster():
+    print('C')
+    time.sleep(globais.espera)
+    limpar()
     print('Co')
     time.sleep(globais.espera)
     limpar()
@@ -33,4 +36,5 @@ def codemaster():
 
 
 def limpar():
-    os.system('cls')
+    if os.name == 'nt': os.system('cls')
+    else: os.system('clear')
