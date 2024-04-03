@@ -1,6 +1,20 @@
-print('\n')
+import funcoes 
+import globais
+
+print("\n")
+
+#Variáveis Globais
 
 
 
 
-print('\n')
+#Executar
+levantar(10)
+
+
+
+
+print(f"Saldo Final: ({globais.saldo:.2f})")
+
+
+print("\n")
