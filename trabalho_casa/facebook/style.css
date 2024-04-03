@@ -4,11 +4,11 @@ body{
 
 
 
-.container-fluid{
+.main{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 65vw;
 }
 
 /* MAIN ESQUERDA */
@@ -30,7 +30,7 @@ body{
 }
 
 .card{
-    box-shadow: 3px 3px 6px 6px rgb(228, 228, 228);
+    box-shadow: 3px 3px 6px 8px rgb(231, 231, 231);
     border-radius: 8px;
 }
 
@@ -60,5 +60,18 @@ a:hover{
     border: none;
 }
 
+
+/* FOOTER */
+
+
+
+footer hr{
+    width: 95%;
+    margin: auto;
+}
+
+.copy{
+    margin-left: 20px;
+}
 
 
