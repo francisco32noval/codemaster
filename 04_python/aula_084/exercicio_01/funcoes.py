@@ -1,12 +1,12 @@
 import os
 import time 
-
+import globais
 
 
 def candidatura():
-    nome 
-    idade
-    experiencia 
+    globais.nome 
+    globais.idade
+    globais.experiencia 
     limpar()
     print('A analisar')
     esperar()
@@ -22,8 +22,8 @@ def candidatura():
     limpar()
 
     print('=== Ficha de Candidatura ===\n')
-    print(f'Nome: ({nome})')
-    print(f'Idade: ({idade})')
+    print(f'Nome: ({globais.nome})')
+    print(f'Idade: ({globais.idade})')
     print(f'Status da Candidatura: ({resultado()})')
 
     
@@ -31,13 +31,13 @@ def candidatura():
 def resultado():
     
 
-    if(idade < 18 and experiencia.lower() == 'sim'):
+    if(globais.idade < 18 and globais.experiencia.lower() == 'sim'):
         return 'APROVADO PARA A ESCOLA DE PROGRAMAÇÃO'
-    elif(idade < 18 and experiencia.lower() == 'nao'):
+    elif(globais.idade < 18 and globais.experiencia.lower() == 'nao'):
         return 'NÃO APROVADO PARA A ESCOLA DE PROGRAMAÇÃO'
-    elif(idade >= 18 and experiencia.lower() == 'sim'):
+    elif(globais.idade >= 18 and globais.experiencia.lower() == 'sim'):
         return 'APROVADO PARA O ESTÁGIO'
-    elif(idade >= 18 and experiencia.lower() == 'nao'):
+    elif(globais.idade >= 18 and globais.experiencia.lower() == 'nao'):
         return 'NÃO APROVADO PARA O ESTÁGIO'
     else:
         return 'ERRO NOS DADOS INFORMADOS, TENTE NOVAMENTE'
