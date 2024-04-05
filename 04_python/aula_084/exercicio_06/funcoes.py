@@ -1,14 +1,17 @@
 import os
 import time
 
-def antecessor(valor):
-    return valor - 1
+def getAreaRetangulo(base, altura):
+    area = base * altura
+    return area
+
+
+
 
 
 #Funcoes Especiais
 def limpar():
     if(os.name == "nt"): os.system("cls")
-    else: os.system("clear")
 
 def aguardar(tempo):
     time.sleep(tempo)
