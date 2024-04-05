@@ -1,9 +1,10 @@
 import os
 import time
 
-def getAnosEmDias(idade):
-    pass
-
+def getAnosEmDias(anos, meses, dias):
+    idade = (anos * 365) + (meses * 30) + dias
+    return idade
+    
 
 
 
