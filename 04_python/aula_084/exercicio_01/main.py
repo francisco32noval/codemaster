@@ -4,7 +4,6 @@ import time
 import globais
 
 
-print('\n')
 
 funcoes.limpar()
 

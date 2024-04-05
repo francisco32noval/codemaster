@@ -35,9 +35,9 @@ def resultado():
         return 'APROVADO PARA A ESCOLA DE PROGRAMAÇÃO'
     elif(globais.idade < 18 and globais.experiencia.lower() == 'nao'):
         return 'NÃO APROVADO PARA A ESCOLA DE PROGRAMAÇÃO'
-    elif(globais.idade >= 18 and globais.experiencia.lower() == 'sim'):
+    elif(globais.experiencia.lower() == 'sim'):
         return 'APROVADO PARA O ESTÁGIO'
-    elif(globais.idade >= 18 and globais.experiencia.lower() == 'nao'):
+    elif(globais.experiencia.lower() == 'nao'):
         return 'NÃO APROVADO PARA O ESTÁGIO'
     else:
         return 'ERRO NOS DADOS INFORMADOS, TENTE NOVAMENTE'
