@@ -6,3 +6,23 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 
+nav{
+    background-color: var(--backcolor_nav_footer);
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+
+header a{
+    text-decoration: none;
+    color: white;
+    padding: 20px 20px;
+    font-size: 1rem;
+}
+
+header img{
+    position: relative;
+    bottom: 35px;
+    z-index: 0;
+    padding: 0px;
+}
