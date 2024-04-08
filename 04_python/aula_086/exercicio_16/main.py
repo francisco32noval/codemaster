@@ -2,12 +2,12 @@ import funcoes
 import os 
 import time 
 
-valor = float(input('- Digita um numero: '))
+macas = int(input('- Indica quantas maças comprou: '))
 
 funcoes.limpar()
 
 funcoes.analisar(0.3)
 
-print(funcoes.getValor(valor))
+print(f'As ({macas}) maças dão um total de ({funcoes.getValor(macas):.2f}).')
 
 print('\n')

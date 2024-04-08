@@ -3,11 +3,15 @@ import os
 
 
 
-def getValor(valor):
-    if(valor >= 0):
-        return 'VALOR POSITIVO!'
+
+def getValor(macas):
+    valor_ate_doze = 1.3 * macas
+    valor = 1.0 * macas
+    if(macas < 12):
+        return valor_ate_doze
     else:
-        return 'VALOR NEGATIVO!'
+        return valor
+    
 
 
 
