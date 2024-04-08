@@ -1,12 +1,11 @@
 import time
 import os
 
-def getSalario(salario_fixo, valor_total_vendas, carros_vendidos, valor_por_carro):
-    salario_final = salario_fixo + (0.05 * valor_total_vendas) + (carros_vendidos * valor_por_carro)
-    return salario_final
 
 
-
+def getMediaFinal(n1, n2, n3):
+    media_final = ((n1 * 2) + (n2 * 3) + (n3 * 5)) / 10
+    return media_final
 
 
 def analisar(tempo):
