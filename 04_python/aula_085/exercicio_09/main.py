@@ -13,6 +13,6 @@ funcoes.analisar(0.3)
 
 funcoes.limpar()
 
-print(f'O novo salário do(a) ({nome}) é ({funcoes.calcularNovoSalario(salario_atual, percentual_reajuste):.2f}) euros.')
+print(f'O novo salário do(a) ({nome}) é ({funcoes.calcularNovoSalario(salario_atual, percentual_reajuste):.2f}) euros')
 
 print('\n')
