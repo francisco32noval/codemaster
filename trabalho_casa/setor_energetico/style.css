@@ -6,6 +6,14 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 
+body *{
+    transition-duration: 0.5s
+}
+
+
+
+/* HEADER */
+
 nav{
     background-color: var(--backcolor_nav_footer);
     font-weight: bold;
@@ -16,13 +24,116 @@ nav{
 header a{
     text-decoration: none;
     color: white;
-    padding: 20px 20px;
     font-size: 1rem;
 }
 
-header img{
-    position: relative;
-    bottom: 35px;
-    z-index: 0;
-    padding: 0px;
+header a:hover{
+    background-color: rgb(200, 200, 200);
+}
+
+/* HEADER BANNER */
+.banner{
+    margin-top: -30px;
+    height: 500px;
+    background-image: url('imagens/topo.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header h1, h4{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+header h1{
+    font-size: 2.5rem;
+}
+
+header h4{
+    font-size: 1.25rem;
+}
+
+.fundo_banner{
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+}
+
+
+/* MAIN */
+
+.titulo_main{
+    font-size: 1.75rem;
+    background-color: rgb(255, 0, 0);
+    font-weight: 600;
+}
+
+/* main img{
+    width: 50%;
+}
+ */
+
+.servicos p{
+    font-size: 1.75rem;
+    font-weight: 700;
+} 
+
+
+
+.servicos{
+    color: white;
+    height: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicos:hover{
+    color: red;
+    filter: brightness(150%);
+}
+
+#solar{
+    width: 50%;
+    background-image: url('imagens/solar.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#eolica{
+    width: 50%;
+    background-image: url('imagens/eolica.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hidreletrica{
+    width: 50%;
+    background-image: url('imagens/energia-hidreletrica-fb.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#nuclear{
+    width: 50%;
+    background-image: url('imagens/energia-nuclear1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+/* FOOTER */
+
+footer > div > div{
+    padding: 12px 0px;
+    background-color: var(--backcolor_nav_footer);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
 }
