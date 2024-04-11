@@ -3,16 +3,23 @@ import os
 
 
 
-def getHorasJogo(fim, inicio):
-    
-    if(inicio == fim):
-        return 'A partida teve 24h'
-    elif(fim > inicio):
-        return fim - inicio
+
+
+def getTotal(combustivel, quantidade):
+    gas = quantidade * 3.30
+    alc = quantidade * 2.9
+
+    if(combustivel.lower() == 'g'):
+        if(quantidade <= 20):
+            return gas - (gas * 0.04)
+        else:
+            return gas - (gas * 0.06)
     else:
-        return (24 + fim) - inicio
-
-
+        if(quantidade <= 20):
+            return alc - (alc * 0.03)
+        else:
+            return alc - (alc * 0.05)
+        
 
 
 def analisar(tempo):
