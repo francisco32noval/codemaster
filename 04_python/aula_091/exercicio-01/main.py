@@ -16,8 +16,9 @@ while(loop <= valor):
 
 print('\n')
 
-while(loop >= 0):
-    print(loop)
+while(loop > 1):
     loop -= 1
+    print(loop)
+    
 
 print('\n')
