@@ -1,5 +1,5 @@
 print('\n')
 
-print('REVISÃO')
+print('TESTE ORAL')
 
 print('\n')
