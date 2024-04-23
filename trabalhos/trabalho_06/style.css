@@ -1,0 +1,54 @@
+:root{
+    --cinza_1d: #1D1D1D;
+    --cinza_70:  #707070;
+    --cinza_4d: #4D4D4D;
+    --dourado_b4:  #B47D33;
+    --dourado_b1: #B17E3B;
+    --dourado_a9: #A97339;
+    --branco: #FFFFFF;
+    --preto: #000000;
+}
+
+
+.lato{
+    font-family: "Lato";
+}
+
+.ibm_P{
+    font-family: "IBM Plex Sans";
+    font-weight: light;
+    font-size: 13px;
+    color: var(--cinza_4d);
+}
+
+.ibm_t1{
+    font-family: "IBM Plex Sans";
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 25px;
+    color: var(--cinza_4d);
+}
+
+.carousel-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#carousel_banner .carousel-indicators button{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.carousel-inner *{
+    border: 1px solid black;
+}
+
+
+hr{
+    margin: 15px 55px;
+    background-color: var(--cinza_70);
+}

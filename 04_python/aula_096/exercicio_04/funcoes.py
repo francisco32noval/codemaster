@@ -29,6 +29,7 @@ def analisar(tempo):
 #Funcoes Especiais
 def limpar():
     if(os.name == "nt"): os.system("cls")
+    else: os.system('clear')
 
 def esperar(tempo):
     time.sleep(tempo)
