@@ -18,7 +18,6 @@ while(opcao != 4):
     elif(opcao == 2): funcoes.getDeposito()
     elif(opcao == 3): funcoes.getPagamento()
     elif(opcao == 4): funcoes.sair()
-    elif(opcao == 5): funcoes.getHistorico()
     else:
         print('Opção Inválida!')
     

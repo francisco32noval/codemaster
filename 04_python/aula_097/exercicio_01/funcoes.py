@@ -26,9 +26,11 @@ def getLevantamento():
 
     if(levantar <= globals.saldo and levantar > 0):
         globals.saldo -= levantar
+        globals.historico -= f'Levantamento de {levantar}'
         print('--- Sucesso ---')
     else:
         print('--- Valor Inválido ---')
+        globals.historico -= f'Tentativa de levantamento de {levantar}'
 
     carregueEnter()
 
@@ -39,12 +41,14 @@ def getPagamento():
 
     compra = input('Descrição do pagamento: ')
     pagamento = float(input('- Valor do pagamento: '))
+    globals.historico -= f'Pagamento de {pagamento}'
 
     if(pagamento <= globals.saldo and pagamento > 0):
         globals.saldo -= pagamento
         print('--- Sucesso ---')
     else:
         print('--- Valor Inválido ---')
+        globals.historico -= f'Tentativa de pagamento de {pagamento}'
 
     carregueEnter()
 
@@ -55,14 +59,23 @@ def getDeposito():
     print('--- Depósitos ---\n')
 
     depositar = float(input('- Valor a ser depositado? '))
+    
 
     if(depositar > 0):
         globals.saldo += depositar
         print('--- Sucesso ---')
+        globals.historico -= f'Deposito de {depositar}'
     else:
         print('--- Valor Inválido ---')
+        globals.historico -= f'Tentativa de deposito de {depositar}'
 
     carregueEnter()
+
+
+def getHistorico():
+    print('Transações')
+
+    print(globals.historico)
 
 
 
