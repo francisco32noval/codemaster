@@ -6,17 +6,42 @@ import globals
 
 def exibirMenu():
     animacao()
-    print("=== Multibanco Python ===\n")
-    print("Conta: Francisco Noval")
-    print(f"Slado: {globals.saldo:.2f}\n")
-    print("1 - Levantamento.")
-    print("2 - Depósitos.")
-    print("3 - Pagamentos.\n")
-    print("4 - Sair.\n")
+    print("=== Padaria Python ===\n")
+    print("1 - Vender.")
+    print("2 - Ver histórico.")
+    print("0 - Sair.\n")
     return int(input("- Opção: "))
 
 
 
+def getVenda():
+    limpa()
+    animacao()
+
+    print('--- Vender ---')
+
+    produto_vendido = str(input('- Descrição da venda: ')) 
+      
+    valor_venda = float(input('- Valor total da venda: '))
+
+    if(valor_venda > 0):
+        print('==== Sucesso! ====')
+        globals.valor_total_vendas += valor_venda
+        globals.produtos_vendidos += f'{produto_vendido} : {valor_venda}\n'
+    else:
+        print('--- Valor Inválido ---')
+    
+    carregueEnter()
+
+def getHistorico():
+
+    print('--- Histórico ---')
+
+    print(f'Total das vendas: {globals.valor_total_vendas}')
+
+    print(f'\n {globals.produtos_vendidos}')
+
+    carregueEnter()
 
 
 
