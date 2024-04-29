@@ -14,20 +14,18 @@ print(f'O primeiro elemento é: {frutas[0]}')
 print()
 
 
-
-print(f'Ultimo elemento, positivo: {frutas[5]}\n')
+print(f'Ultimo elemento, positivo: {frutas[len(frutas) - 1]}\n')
 
 
 print()
 
 
-print(f'Ultimo elemento, negativo: {frutas[len(frutas) - 1]}\n')
+print(f'Ultimo elemento, negativo: {frutas[-1]}\n')
 
 
 print()
 
 sublista = frutas[1:4]
-
 print(f'Sublista do 2º ao 4º elemento: {sublista}\n')
 
 
