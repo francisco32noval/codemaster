@@ -18,11 +18,7 @@
     <link rel="stylesheet" href="style.css">
 
 
-    <!-- FONTS -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Honk&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Madimi+One&family=Rubik+Glitch+Pop&family=Whisper&family=Workbench&display=swap');
-    </style>
+
 </head>
 
 
@@ -30,19 +26,45 @@
 
     <header class="container-fluid">
         <div class="row">
-            <h1 class="col text-center">TONY STARK</h1>
+            <h1 class="col text-center ibm_T">TONY STARK</h1>
         </div>
 
         <hr>
 
-        <div class="row text-center">
-            <div class="col">
-                <a href="#">Home</a>
-                <a href="#">autores</a>
-                <a href="#">Livros</a>
-                <a href="#">Imprensa</a>
-                <a href="#">contactos</a>
-            </div>
+        <div class="row">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid ibm_t1">
+                    
+                    <div class="collapse navbar-collapse flex_center" id="navbarNav">
+                        <a class="navbar-brand ibm_t1" href="#">Home</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">autor</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    livros
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">imprensa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-disabled="true">contactos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
 
         <div class="row">
@@ -56,7 +78,7 @@
                 <div class="carousel-inner">
 
                     <div class="carousel-item active" data-bs-interval="2000">
-                        <img src="imagens/cabecalho1.jpg" class="d-block w-100" alt="cabecalho1">
+                        <img src="imagens/cabecalho1.jpg" class="d-block w-100 size" alt="cabecalho1">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>First slide label</h5>
                             <p>Some representative placeholder content for the first slide.</p>
@@ -64,7 +86,7 @@
                     </div>
 
                     <div class="carousel-item" data-bs-interval="2000">
-                        <img src="imagens/cabecalho2.jpg" class="d-block w-100" alt="cabecalho2">
+                        <img src="imagens/cabecalho2.jpg" class="d-block w-100 size" alt="cabecalho2">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Second slide label</h5>
                             <p>Some representative placeholder content for the second slide.</p>
@@ -72,7 +94,7 @@
                     </div>
 
                     <div class="carousel-item" data-bs-interval="2000">
-                        <img src="imagens/cabecalho3.jpg" class="d-block w-100" alt="cabecalho3">
+                        <img src="imagens/cabecalho3.jpg" class="d-block w-100 size" alt="cabecalho3">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Third slide label</h5>
                             <p>Some representative placeholder content for the third slide.</p>
@@ -80,7 +102,7 @@
                     </div>
 
                     <div class="carousel-item" data-bs-interval="2000">
-                        <img src="imagens/cabecalho4.jpg" class="d-block w-100" alt="cabecalho4">
+                        <img src="imagens/cabecalho4.jpg" class="d-block w-100 size" alt="cabecalho4">
                         <div class="carousel-caption d-none d-md-block">
                             <h5>Third slide label</h5>
                             <p>Some representative placeholder content for the third slide.</p>

@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Madimi+One&family=Rubik+Glitch+Pop&family=Whisper&family=Workbench&display=swap');
+
 :root{
     --cinza_1d: #1D1D1D;
     --cinza_70:  #707070;
@@ -10,8 +14,26 @@
 }
 
 
-.lato{
-    font-family: "Lato";
+.menu_rodape{
+    font-family: 'Lato';
+    color: var(--cinza_4d);
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.menus{
+    font-family: 'Lato';
+    color: var(--cinza_4d);
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+
+.submenus{
+    font-family: "IBM Plex Sans";
+    color: var(--cinza_4d);
+    font-size: 13px;
+    font-weight: medium;
 }
 
 .ibm_P{
@@ -21,7 +43,7 @@
     color: var(--cinza_4d);
 }
 
-.ibm_t1{
+.ibm_T1{
     font-family: "IBM Plex Sans";
     text-transform: uppercase;
     font-weight: bold;
@@ -29,9 +51,33 @@
     color: var(--cinza_4d);
 }
 
-.carousel-inner{
+.ibm_T{
+    font-family: "IBM Plex Sans";
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 35px;
+    color: var(--cinza_4d);
+}
+
+.banner_titulo{
+    font-family: "IBM Plex Sans";
+    text-transform: uppercase;
+    font-weight: light;
+    font-size: 40px;
+    color: var(--cinza_4d);
+}
+
+
+
+hr{
+    margin: 15px 55px;
+    background-color: var(--cinza_70);
+}
+
+
+/* CAROUSEL */
+.flex_center{
     display: flex;
-    flex-direction: column;
     justify-content: center;
 }
 
@@ -47,8 +93,6 @@
     border: 1px solid black;
 }
 
-
-hr{
-    margin: 15px 55px;
-    background-color: var(--cinza_70);
+.size{
+    height: 730px;
 }
