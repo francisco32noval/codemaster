@@ -9,33 +9,37 @@ print(frutas)
 
 print()
 
-print(f'O primeiro elemento é: {frutas[0]}')
+print('==== Lista de frutas com FOR ====\n')
 
-print()
-
-
-
-print(f'Ultimo elemento, positivo: {frutas[5]}\n')
+for f in frutas:
+    print(f)
 
 
 print()
 
 
-print(f'Ultimo elemento, negativo: {frutas[len(frutas) - 1]}\n')
+print()
+
+print('==== Lista de frutas com FOR + RANGE ====\n')
+
+for i in range(len(frutas)):
+    print(f'{i + 1} - {frutas[i]}')
 
 
 print()
 
-sublista = frutas[1:4]
 
-print(f'Sublista do 2º ao 4º elemento: {sublista}\n')
+print('==== Lista de frutas com FOR + REVERSE ====\n')
+
+for f in reversed(frutas): print(f)
 
 
 print()
 
-frutas[1] = 'clementinas'
+print('==== Lista de frutas com FOR + RANGE + REVERSE ====\n')
 
-print(frutas)
+for i in range(len(frutas)-1, -1, -1):
+    print(f'{i + 1} - {frutas[i]}')
 
 
 

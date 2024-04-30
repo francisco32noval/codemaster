@@ -3,39 +3,39 @@ import funcoes
 funcoes.limpa()
 
 
-frutas = ['uva', 'maça', 'morango']
+frutas = ['uva', 'maça', 'morango', 'ananás', 'banana', 'laranja']
+
+padaria = ['bolo', 'pão', 'queijo']
 
 print(frutas)
+print(padaria)
 
 print()
 
-print('Adicionar ananás\n')
+frutas.sort()
+print(f'Lista de frutas ordenada: {frutas}')
 
-frutas.append('ananás')
-print(frutas)
-
-print()
-
-print('Laranja na segunda posição\n')
-
-frutas.insert(1, 'laranja')
-print(frutas)
 
 print()
 
-print('Remover primeiro elemento\n')
-
-frutas.pop(0)
-
-print(frutas)
+frutas.sort(reverse=True)
+print(f'Lista de frutas ordenada reversa: {frutas}')
 
 print()
 
-print('Remover morango\n')
+if('morango' in frutas): print('morango está na lista 1.\n')
+else: print('Falso\n')
 
-frutas.remove('morango')
+print('-' *20)
+
+frutas.extend(padaria)
+print(f'Lista 1 extendida com a lista 2.\n{frutas}\n')
+
+print('-' *20)
+
+frutas.clear()
     
-print(frutas)
+print(f'Lista 1 limpada: {frutas}')
 
 
 print('\n')
