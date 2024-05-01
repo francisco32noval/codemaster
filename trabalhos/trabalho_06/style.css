@@ -47,7 +47,7 @@
     font-family: "IBM Plex Sans";
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
     color: var(--cinza_4d);
 }
 
@@ -75,10 +75,36 @@ hr{
 }
 
 
-/* CAROUSEL */
 .flex_center{
     display: flex;
     justify-content: center;
+}
+
+/* NAVBAR */
+
+.cabecalho{
+    margin-top: 52px;
+}
+
+.caixa_submenu{
+    border-radius: 0px;
+    border: 0px solid white;
+    box-shadow: 0px 0px 5px 3px rgba(201, 201, 201);
+    padding: 25px 35px 30px;
+    opacity: 95%;
+}
+
+.caixa_submenu > li{
+    margin: 15px 0px;
+}
+
+/* CAROUSEL */
+
+.carosel{
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    box-sizing: border-box;
 }
 
 #carousel_banner .carousel-indicators button{
@@ -88,6 +114,8 @@ hr{
     background-color: black;
     opacity: 0.5;
 }
+
+
 
 .carousel-inner *{
     border: 1px solid black;

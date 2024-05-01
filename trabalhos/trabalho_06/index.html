@@ -24,19 +24,23 @@
 
 <body>
 
-    <header class="container-fluid">
-        <div class="row">
-            <h1 class="col text-center ibm_T">TONY STARK</h1>
-        </div>
+    <header class="container-fluid size">
+        
 
-        <hr>
+        <div class="row cabecalho">
 
-        <div class="row">
+            <div>
+                <h1 class="col text-center ibm_T">TONY STARK</h1>
+
+                <hr>
+            </div>
+
+            
             <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid ibm_t1">
+                <div class="container-fluid ibm_T1">
                     
                     <div class="collapse navbar-collapse flex_center" id="navbarNav">
-                        <a class="navbar-brand ibm_t1" href="#">Home</a>
+                        <a class="navbar-brand ibm_T1" href="#">Home</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
@@ -45,14 +49,16 @@
                                 <a class="nav-link" aria-current="page" href="#">autor</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     livros
                                 </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <ul class="dropdown-menu caixa_submenu submenus">
+                                    <li><a class="dropdown-item" href="#">Senhora do amor e da guerra</a></li>
+                                    <li><a class="dropdown-item" href="#">o velho que pensava que fugia</a></li>
+                                    <li><a class="dropdown-item" href="#">o caracol estrábico</a></li>
+                                    <li><a class="dropdown-item" href="#">o colecionador de amnésias</a></li>
+                                    <li><a class="dropdown-item" href="#">o homem certo é dificil de encontrar</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">
@@ -68,20 +74,27 @@
         </div>
 
         <div class="row">
-            <div id="carousel_banner" class="carousel slide p-0">
+            <div id="carousel_banner" class="carousel slide p-0 size carosel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="##carousel_banner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="##carousel_banner" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="##carousel_banner" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     <button type="button" data-bs-target="##carousel_banner" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 </div>
+
                 <div class="carousel-inner">
 
                     <div class="carousel-item active" data-bs-interval="2000">
                         <img src="imagens/cabecalho1.jpg" class="d-block w-100 size" alt="cabecalho1">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
+                        <div class="carousel-caption">
+                            <span class="novidade">Novidade</span>
+                            <br>
+                            <span class="banner_titulo">Senhora do amor e da guerra</span>
+                            <p class="ibm_P">
+                                Séculos antes do famoso Gilgamesh, uma bela mulher aparece a comandar os destinos da maior cidade do mundo.
+                                <br>
+                                Sete extraordinárias plaquetas de barro cozido sugerem a sua história: a inteligência, a coragem, o dom de seduzir, que a conduzem ao
+                            </p>
                         </div>
                     </div>
 
@@ -111,15 +124,7 @@
 
                 </div>
 
-                <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carousel_banner" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel_banner" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button> -->
+                
 
             </div>
         </div>
