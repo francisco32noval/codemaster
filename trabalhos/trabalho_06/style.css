@@ -129,10 +129,10 @@ header hr{
     margin-top: 15px;
 }
 
-/* .carousel-caption div:nth-child(3) button:hover{
+.carousel-caption button:hover{
     background-color: var(--cinza_4d);
     color: white;
-} */
+}
 
 
 
