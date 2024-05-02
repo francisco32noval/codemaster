@@ -1,126 +1,146 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Honk&family=Inter:wght@100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lobster&family=Madimi+One&family=Rubik+Glitch+Pop&family=Whisper&family=Workbench&display=swap');
-
-:root{
-    --cinza_1d: #1D1D1D;
-    --cinza_70:  #707070;
-    --cinza_4d: #4D4D4D;
-    --dourado_b4:  #B47D33;
-    --dourado_b1: #B17E3B;
-    --dourado_a9: #A97339;
-    --branco: #FFFFFF;
-    --preto: #000000;
-}
-
-
-.menu_rodape{
-    font-family: 'Lato';
-    color: var(--cinza_4d);
-    font-size: 16px;
-    text-transform: uppercase;
-}
-
-.menus{
-    font-family: 'Lato';
-    color: var(--cinza_4d);
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
-
-.submenus{
-    font-family: "IBM Plex Sans";
-    color: var(--cinza_4d);
-    font-size: 13px;
-    font-weight: medium;
-}
-
-.ibm_P{
-    font-family: "IBM Plex Sans";
-    font-weight: light;
-    font-size: 13px;
-    color: var(--cinza_4d);
-}
-
-.ibm_T1{
-    font-family: "IBM Plex Sans";
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 20px;
-    color: var(--cinza_4d);
-}
-
-.ibm_T{
-    font-family: "IBM Plex Sans";
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 35px;
-    color: var(--cinza_4d);
-}
-
-.banner_titulo{
-    font-family: "IBM Plex Sans";
-    text-transform: uppercase;
-    font-weight: light;
-    font-size: 40px;
-    color: var(--cinza_4d);
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
 
 
-hr{
-    margin: 15px 55px;
-    background-color: var(--cinza_70);
-}
-
-
-.flex_center{
-    display: flex;
-    justify-content: center;
-}
-
-/* NAVBAR */
-
-.cabecalho{
-    margin-top: 52px;
-}
-
-.caixa_submenu{
-    border-radius: 0px;
-    border: 0px solid white;
-    box-shadow: 0px 0px 5px 3px rgba(201, 201, 201);
-    padding: 25px 35px 30px;
-    opacity: 95%;
-}
-
-.caixa_submenu > li{
-    margin: 15px 0px;
-}
-
-/* CAROUSEL */
-
-.carosel{
-    position: absolute;
-    top: 0px;
-    z-index: -1;
-    box-sizing: border-box;
-}
-
-#carousel_banner .carousel-indicators button{
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: black;
-    opacity: 0.5;
-}
-
-
-
-.carousel-inner *{
-    border: 1px solid black;
-}
+/* HEADER */
 
 .size{
     height: 730px;
+}
+
+#tony{
+    font-weight: bold;
+    font-size: 35px;
+    color: var(--cinza_4d);
+    padding-top: 52px;
+}
+
+header hr{
+    margin: 15px 55px;
+    color: var(--cinza_70);
+}
+
+
+/* NAVBAR */
+
+
+.navbar{
+    margin-top: -15px;
+}
+
+.letra_nav{
+    font-weight: 1000;
+    color: var(--cinza_4d);
+    font-size: 18px;
+}
+
+.nav-link:hover{
+    color: var(--dourado_b4);
+}
+
+
+
+
+
+
+/* CAIXA SUBMENU */
+
+.caixa_submenu{
+    box-sizing: border-box;
+    border: none;
+    border-radius: 0px;
+    box-shadow: 0px 0px 3px 3px rgb(194, 194, 194);
+    padding: 25px 35px 30px;
+}
+
+.caixa_submenu a{
+    font-weight: bold;
+    color: var(--cinza_4d);
+    font-size: 13px;
+    cursor: pointer;
+    padding: 7px px;
+}
+
+.dropdown-item:hover{
+    color: var(--dourado_b4);
+}
+
+
+
+
+
+
+/* CAROUSEL */
+
+.posicao{
+    box-sizing: border-box;
+    width: 100%;
+    margin-left: -12px;
+
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+}
+
+
+.carousel-caption{
+    /* border: 1px solid black; */
+    color: black;
+    width: 38%;
+    text-align: left;
+    padding: 5px;
+
+
+    position: relative;
+    bottom: 455px;
+    left: 160px;
+}
+
+.carousel-caption h5{
+    font-family: 'IBM Plex Sans';
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 40px;
+    color: var(--cinza_4d);
+    margin-top: 12px;
+}
+
+
+.carousel-caption p{
+    font-family: 'IBM Plex Sans';
+    font-weight: light;
+    font-size: 13px;
+    color: var(--cinza_4d);
+    margin-top: 8px;
+}
+
+.carousel-caption button{
+    margin-top: 15px;
+}
+
+.carousel-caption button:hover{
+    background-color: var(--cinza_4d);
+    color: white;
+}
+
+
+
+#carouselExampleCaptions .carousel-indicators button{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    opacity: 1;
+    border: 1px solid var(--cinza_70);
+    margin: 0px 10px;
+
+    position: relative;
+    right: 402px;
+    bottom: 80px;
+}
+
+#carouselExampleCaptions .carousel-indicators button.active{
+    background-color: rgba(0, 0, 0, 0.5) !important;
 }

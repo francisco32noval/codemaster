@@ -17,6 +17,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- CONSTANTES CSS -->
+    <link rel="stylesheet" href="constantes.css">
+
 
 
 </head>
@@ -25,109 +28,163 @@
 <body>
 
     <header class="container-fluid size">
-        
-
-        <div class="row cabecalho">
-
-            <div>
-                <h1 class="col text-center ibm_T">TONY STARK</h1>
-
-                <hr>
-            </div>
-
-            
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid ibm_T1">
-                    
-                    <div class="collapse navbar-collapse flex_center" id="navbarNav">
-                        <a class="navbar-brand ibm_T1" href="#">Home</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">autor</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    livros
-                                </a>
-                                <ul class="dropdown-menu caixa_submenu submenus">
-                                    <li><a class="dropdown-item" href="#">Senhora do amor e da guerra</a></li>
-                                    <li><a class="dropdown-item" href="#">o velho que pensava que fugia</a></li>
-                                    <li><a class="dropdown-item" href="#">o caracol estrábico</a></li>
-                                    <li><a class="dropdown-item" href="#">o colecionador de amnésias</a></li>
-                                    <li><a class="dropdown-item" href="#">o homem certo é dificil de encontrar</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">imprensa</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" aria-disabled="true">contactos</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-
         <div class="row">
-            <div id="carousel_banner" class="carousel slide p-0 size carosel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="##carousel_banner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="##carousel_banner" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="##carousel_banner" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="##carousel_banner" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+            <div class="col">
+
+                <!-- TITULO + NAVBAR -->
+
+                <div class="text-center">
+
+                    <h1 id="tony" class="IBM_upper">tony stark</h1>
+
+                    <hr>
+
+                    <nav class="navbar navbar-expand-lg">
+
+                        <div class="container-fluid">
+
+                            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button> -->
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 m-auto letra_nav lato_upper pointer">
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">autor</a>
+                                    </li>
+
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            livros
+                                        </a>
+                                        <ul class="dropdown-menu caixa_submenu IBM_upper">
+                                            <li><a class="dropdown-item" href="#">Senhora do Amor da Guerra</a></li>
+                                            <li><a class="dropdown-item" href="#">o velho que pensava que fugia</a></li>
+                                            <li><a class="dropdown-item" href="#">o caracol estrábico</a></li>
+                                            <li><a class="dropdown-item" href="#">o colecionador de amnésias</a></li>
+                                            <li><a class="dropdown-item" href="#">o homem certo é difícil de encontrar</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link">imprensa</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">contactos</a>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+
+                    </nav>
+
                 </div>
 
-                <div class="carousel-inner">
 
-                    <div class="carousel-item active" data-bs-interval="2000">
-                        <img src="imagens/cabecalho1.jpg" class="d-block w-100 size" alt="cabecalho1">
-                        <div class="carousel-caption">
-                            <span class="novidade">Novidade</span>
-                            <br>
-                            <span class="banner_titulo">Senhora do amor e da guerra</span>
-                            <p class="ibm_P">
-                                Séculos antes do famoso Gilgamesh, uma bela mulher aparece a comandar os destinos da maior cidade do mundo.
-                                <br>
-                                Sete extraordinárias plaquetas de barro cozido sugerem a sua história: a inteligência, a coragem, o dom de seduzir, que a conduzem ao
-                            </p>
-                        </div>
+
+                <!-- CAROUSEL -->
+
+                <div id="carouselExampleCaptions" class="carousel slide size posicao"  data-bs-ride="carousel">
+
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1">
+                        </button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2">
+                        </button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3">
+                        </button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                            aria-label="Slide 4">
+                        </button>
                     </div>
 
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="imagens/cabecalho2.jpg" class="d-block w-100 size" alt="cabecalho2">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <img src="imagens/cabecalho1.jpg" class="d-block w-100" alt="cabecalho1">
+                            <div class="carousel-caption d-none d-md-block">
+                                <span class="lato_upper novidade">novidade</span>
+                                <h5>Senhora do Amor e da Guerra</h5>
+                                <p>
+                                    Séculos antes do famoso Gilgamesh, uma bela mulher aparece a comandar os destinos da maior cidade do mundo.
+                                    <br>
+                                    Sete extraordinárias plaquetas de barro cozido sugerem a sua história: a inteligência, a coragem, o dom de seduzir, que a conduzem ao
+                                </p>
+                                <button class="saber_mais pointer">Saber mais</button>
+                            </div>
                         </div>
+
+                        <div class="carousel-item">
+                            <img src="imagens/cabecalho2.jpg" class="d-block w-100" alt="cabecalho2">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Senhora do Amor e da Guerra</h5>
+                                <p>
+                                    Séculos antes do famoso Gilgamesh, uma bela mulher aparece a comandar os destinos da maior cidade do mundo.
+                                    <br>
+                                    Sete extraordinárias plaquetas de barro cozido sugerem a sua história: a inteligência, a coragem, o dom de seduzir, que a conduzem ao
+                                </p>
+                                <button class="saber_mais pointer">Saber mais</button>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="imagens/cabecalho3.jpg" class="d-block w-100" alt="cabecalho3">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Senhora do Amor e da Guerra</h5>
+                                <p>
+                                    Séculos antes do famoso Gilgamesh, uma bela mulher aparece a comandar os destinos da maior cidade do mundo.
+                                    <br>
+                                    Sete extraordinárias plaquetas de barro cozido sugerem a sua história: a inteligência, a coragem, o dom de seduzir, que a conduzem ao
+                                </p>
+                                <button class="saber_mais pointer">Saber mais</button>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="imagens/cabecalho4.jpg" class="d-block w-100" alt="cabecalho4">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Senhora do Amor e da Guerra</h5>
+                                <p>
+                                    Séculos antes do famoso Gilgamesh, uma bela mulher aparece a comandar os destinos da maior cidade do mundo.
+                                    <br>
+                                    Sete extraordinárias plaquetas de barro cozido sugerem a sua história: a inteligência, a coragem, o dom de seduzir, que a conduzem ao
+                                </p>
+                                <button class="saber_mais pointer" type="button">Saber mais</button>
+                            </div>
+                        </div>
+                        
                     </div>
 
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="imagens/cabecalho3.jpg" class="d-block w-100 size" alt="cabecalho3">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="imagens/cabecalho4.jpg" class="d-block w-100 size" alt="cabecalho4">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                        </div>
-                    </div>
-
+                    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button> -->
                 </div>
-
-                
 
             </div>
+
         </div>
+
     </header>
 
 </body>

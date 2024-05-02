@@ -1,0 +1,41 @@
+:root{
+    --cinza_1d: #1D1D1D;
+    --cinza_70:  #707070;
+    --cinza_4d: #4D4D4D;
+    --dourado_b4:  #B47D33;
+    --dourado_b1: #B17E3B;
+    --dourado_a9: #A97339;
+    --branco: #FFFFFF;
+    --preto: #000000;
+}
+
+.IBM_upper{
+    font-family: 'IBM Plex Sans';
+    text-transform: uppercase;
+}
+
+.lato_upper{
+    font-family: 'Lato';
+    text-transform: uppercase;
+}
+
+.pointer{
+    cursor: pointer;
+}
+
+.novidade{
+    color: var(--dourado_b4);
+    font-weight: 700;
+}
+
+
+.saber_mais{
+    font-family: 'IBM Plex Sans';
+    text-transform: uppercase;
+    width: 120px;
+    height: 30px;
+    color: white;
+    background-color: var(--dourado_b1);
+    border: none;
+    font-weight: 700;
+}
