@@ -3,46 +3,25 @@ import funcoes
 funcoes.limpa()
 
 
-frutas = ['uva', 'maça', 'morango', 'ananás', 'banana', 'laranja']
+original = [['morango', 'banana', 'uva'], ['frango', 'bifana', 'novilho'], ['agua', 'cola', 'pepsi']]
 
-print(frutas)
 
-print()
-
-print('==== Lista de frutas com FOR ====\n')
-
-for f in frutas:
-    print(f)
-
+print(original)
 
 print()
 
+print('==== FOR PARA CADA LISTA DENTRO DA MATRIZ ====\n')
+
+for linha in original: print(linha)
 
 print()
 
-print('==== Lista de frutas com FOR + RANGE ====\n')
+print('==== FOR PARA CADA ITEM DENTRO DE CADA LISTA ====\n')
 
-for i in range(len(frutas)):
-    print(f'{i + 1} - {frutas[i]}')
-
-
-print()
-
-
-print('==== Lista de frutas com FOR + REVERSE ====\n')
-
-for f in reversed(frutas): print(f)
-
-
-print()
-
-print('==== Lista de frutas com FOR + RANGE + REVERSE ====\n')
-
-for i in range(len(frutas)-1, -1, -1):
-    print(f'{i + 1} - {frutas[i]}')
-
-
-
+for linha in original:
+    for coluna in linha:
+        print(coluna)
+    print()
 
 
 
