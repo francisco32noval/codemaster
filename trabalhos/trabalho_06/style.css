@@ -4,6 +4,9 @@
 
 
 
+body{
+    transition: 0.3s;
+}
 /* HEADER */
 
 .size{
@@ -117,10 +120,18 @@ header hr{
 }
 
 .carousel-caption button{
+    font-family: 'IBM Plex Sans';
+    text-transform: uppercase;
+    width: 120px;
+    height: 30px;
+    color: white;
+    background-color: var(--dourado_b1);
+    border: none;
+    font-weight: 700;
     margin-top: 15px;
 }
 
-.carousel-caption button:hover{
+.carousel-item .carousel-caption button:hover{
     background-color: var(--cinza_4d);
     color: white;
 }
