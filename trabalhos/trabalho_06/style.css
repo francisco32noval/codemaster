@@ -1,6 +1,6 @@
 
-body{
-    transition: 0.3s;
+body *{
+    transition-duration: 0.3s;
 }
 
 
@@ -129,10 +129,10 @@ header hr{
     margin-top: 15px;
 }
 
-.carousel-caption button:hover{
+/* .carousel-caption div:nth-child(3) button:hover{
     background-color: var(--cinza_4d);
     color: white;
-}
+} */
 
 
 
@@ -176,6 +176,8 @@ header hr{
     border: 1px solid black;
 } */
 
+
+
 .tony{
     width: 312px;
     height: 396px;
@@ -183,8 +185,14 @@ header hr{
 }
 
 .card-body{
-    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-right: 50px;
+    margin-top: 75px;
+    text-align: left;
 }
+
 
 .card-body h5{
     font-size: 25px;
@@ -193,6 +201,15 @@ header hr{
 }
 
 .card-body p{
-    font-family: 'IBM Plex Sans';
-    font-size: 13px;
+    margin-top: 25px;
+}
+
+.card-body div:nth-child(3){
+    margin-top: 25px;
+    align-self: flex-end;
+}
+
+.card-body div:nth-child(3) button:hover{
+    background-color: var(--cinza_4d);
+    color: white;
 }
