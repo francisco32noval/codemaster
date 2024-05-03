@@ -6,19 +6,23 @@ import globals
 
 def exibirMenu():
     animacao()
-    print("=== Cadastro de pessoas ===\n")
-    print("1 - Cadastrar nova pessoa.")
-    print("2 - Editar pessoa.")
-    print("3 - Apagar pessoa.\n")
-    print("4 - Listar todas as pessoas registadas.\n")
+    print("=== Gestão de colaboradores ===\n")
+    print("1 - Novo colaborador.")
+    print("2 - Editar colaborador.")
+    print("3 - Apagar colaborador.\n")
+    print("4 - Listar todas os colaboradores.\n")
     print("0 - Sair.\n")
     return int(input("- Opção: "))
 
-def getNovaPessoa():
+def getNovoColaborador():
 
-    print('---- Cadastrar nova pessoa ----\n')
-    
-    globals.total_pessoas.append(input('- Digite o nome da nova pessoa: '))
+    print('---- Novo Colaborador ----\n')
+    nome = input('- Digita o NOME do(a) novo(a) colaborador(a): ')
+    cargo = input('- Digita o CARGO do(a) novo(a) colaborador(a): ')
+    ordenado = int(input('- Digita o ORDENADO do(a) novo(a) colaborador(a): '))
+
+    novo_colaborador = [nome, cargo, ordenado]
+    globals.total_colaboradores = novo_colaborador
 
     print('\n---- Sucesso! ----')
 
@@ -31,8 +35,8 @@ def getEditarPessoa():
     getLista(False)
     id = int(input('\n- Digita o id que desejas editar: '))
     
-    if(id >= 0 and id < len(globals.total_pessoas)):
-        globals.total_pessoas = input(f'- Digita o nome que irá substituir ({globals.total_pessoas[i]})')
+    if(id >= 0 and id < len(globals.total_colaboradores)):
+        globals.total_colaboradores = input(f'- Digita o nome que irá substituir ({globals.total_colaboradores[id]})')
         print('\n --- Sucesso! ---')
     else:
         print('Inválido!')
@@ -50,10 +54,14 @@ def getApagarPessoa():
 
 
 def getLista(com_titulo):
-    if(com_titulo): print('---- Lista das pessoas cadastradas ----')
-    for i in range(len(globals.total_pessoas)):
-        print(f'ID: ({i}) - NOME: ({globals.total_pessoas[i]})')
+    if(com_titulo): print('---- Lista de Colaboradores ----')
+    for i in range(len(globals.total_colaboradores)):
+        print(f'(ID: {i}) | NOME: ({globals.total_colaboradores[0]}) | Cargo: ({globals.total_colaboradores[1]}) | Ordenado: ({globals.total_colaboradores[2]})')
 
+    carregueEnter()
+
+
+    
 #Funcoes Especiais
 def limpa():
     if(os.name == "nt"): os.system("cls")
