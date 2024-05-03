@@ -17,6 +17,7 @@
 .IBM_upper{
     font-family: 'IBM Plex Sans';
     text-transform: uppercase;
+    color: var(--cinza_4d);
 }
 
 
@@ -30,6 +31,7 @@
 .lato_upper{
     font-family: 'Lato';
     text-transform: uppercase;
+    color: var(--cinza_4d);
 }
 
 .pointer{
@@ -39,6 +41,7 @@
 .novidade{
     color: var(--dourado_b4);
     font-weight: 700;
+    font-size: 13px;
 }
 
 

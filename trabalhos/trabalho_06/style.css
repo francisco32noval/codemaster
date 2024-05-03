@@ -97,6 +97,7 @@ header hr{
     position: relative;
     bottom: 455px;
     left: 160px;
+    z-index: 1;
 }
 
 .carousel-caption h5{
@@ -118,14 +119,6 @@ header hr{
 }
 
 .carousel-caption button{
-    font-family: 'IBM Plex Sans';
-    text-transform: uppercase;
-    width: 120px;
-    height: 30px;
-    color: white;
-    background-color: var(--dourado_b1);
-    border: none;
-    font-weight: 700;
     margin-top: 15px;
 }
 
@@ -150,16 +143,19 @@ header hr{
     bottom: 80px;
 }
 
-#carouselExampleCaptions .carousel-indicators button.active{
+/* #carouselExampleCaptions .carousel-indicators button.active{
     background-color: rgba(0, 0, 0, 0.5) !important;
-}
+} */
+
+
+
 
 
 
 /* MAIN */
 
 
-.card{
+.card_tony{
     width: 1190px;
     height: 538px;
     margin-top: -45px;
@@ -172,11 +168,6 @@ header hr{
     height: 100%;
 }
 
-/* .card_1 div{
-    border: 1px solid black;
-} */
-
-
 
 .tony{
     width: 312px;
@@ -184,7 +175,7 @@ header hr{
     margin-top: 60px;
 }
 
-.card-body{
+.card_bemvindo{
     display: flex;
     flex-direction: column;
     padding-left: 25px;
@@ -194,22 +185,95 @@ header hr{
 }
 
 
-.card-body h5{
+.card_bemvindo h5{
     font-size: 25px;
     color: var(--cinza_4d);
     font-weight: bold;
 }
 
-.card-body p{
+.card_bemvindo p{
     margin-top: 25px;
 }
 
-.card-body div:nth-child(3){
+.card_bemvindo div:nth-child(3){
     margin-top: 25px;
     align-self: flex-end;
 }
 
-.card-body div:nth-child(3) button:hover{
+.card_bemvindo div:nth-child(3) button:hover{
     background-color: var(--cinza_4d);
     color: white;
+}
+
+
+
+
+main > div:nth-child(2){
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 85px;
+    padding-left: 60px;
+}
+
+/* CARD LIVROS */
+
+.card_livros > div{
+    box-sizing: border-box;
+    height: 720px;
+    margin: 100px 35px;
+
+    border: none;
+    box-shadow: 0px 0px 6px 4px rgb(223, 222, 222);
+}
+
+.card_livros > div > img{
+    height: 428px;
+}
+.card_livros *{
+    border-radius: 0px;
+}
+
+.card_livros > div > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card_livros > div > div > div{
+    align-self: flex-end;
+}
+
+
+.card_livros > div h5{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.card_livros > div p{
+    font-size: 13px;
+    margin-top: 35px;
+}
+
+.card_livros > div > div > div button:hover{
+    background-color: var(--cinza_4d);
+    color: white;
+}
+
+
+
+
+/* FOOTER */
+
+
+/* NAVFOOTER */
+
+footer hr{
+    color: var(--cinza_70);
+    height: 1px;
+}
+
+footer li{
+    font-size: 16px;
+    margin: 0px 20px;
 }
