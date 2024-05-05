@@ -1,4 +1,5 @@
-body *{
+body{
+    overflow-x: hidden;
     transition-duration: 0.3s;
 }
 
@@ -267,6 +268,10 @@ main > div:nth-child(2){
 
 /* NAVFOOTER */
 
+footer{
+    margin-bottom: 50px;
+}
+
 footer hr{
     color: var(--cinza_70);
     height: 1px;
@@ -275,4 +280,113 @@ footer hr{
 footer li{
     font-size: 16px;
     margin: 0px 20px;
+}
+
+footer div:nth-child(2){
+    margin-top: 50px;
+    flex-wrap: nowrap;
+}
+
+
+
+
+
+
+/* CONTACTOS EMAIL REDES SOCIAIS */
+.contactos div:nth-child(1), .redes_sociais div:nth-child(1){
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.footer_dourado{
+    color: var(--dourado_b1);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 18px;
+} 
+
+.contactos div:nth-child(2){
+    margin-top: 20px;
+}
+
+
+
+
+
+
+/* EMAIL */
+
+.email div{
+    margin: 0px 20px;
+}
+
+.email{
+    width: 400px;
+    
+    position: relative;
+    bottom: 17px;
+}
+
+.email div:nth-child(2){
+    position: relative;
+    bottom: 25px;
+}
+
+
+
+
+
+/* REDES SOCIAIS */
+
+.redes_sociais{
+    padding-left: 90px;
+
+    position: relative;
+    bottom: 20px;
+}
+
+.redes_sociais img{
+    width: 37px;
+    margin: 0px 15px;
+}
+
+#instagram:hover{
+    content: url('imagens/instagram2.jpg');
+}
+
+
+#facebook:hover{
+    content: url('imagens/facebook2.jpg');
+}
+
+
+#linkedin:hover{
+    content: url('imagens/linkedin2.jpg');
+}
+
+
+
+
+/* LIVRO RECLAMACOES + RALC + COPY */
+
+
+.footer_end{
+    margin-top: 50px;
+}
+
+
+#reclamacoes{
+    width: 77px;
+    height: 31px;
+    margin-right: 43px;
+}
+
+#ralc{
+    width: 125px;
+    height: 29px;
+}
+
+.footer_end div:nth-child(2){
+    position: relative;
+    bottom: 40px;
 }
