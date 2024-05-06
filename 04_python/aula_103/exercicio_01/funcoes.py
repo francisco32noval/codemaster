@@ -22,7 +22,7 @@ def getNovoColaborador():
     ordenado = int(input('- Digita o ORDENADO do(a) novo(a) colaborador(a): '))
 
     novo_colaborador = [nome, cargo, ordenado]
-    globals.total_colaboradores = novo_colaborador
+    globals.total_colaboradores.append(novo_colaborador)
 
     print('\n---- Sucesso! ----')
 
@@ -46,8 +46,8 @@ def getApagarPessoa():
     print('---- Apagar Pessoa ----')
     getLista(False)
     id = int(input('\n- Digita o id que desejas apagar: '))
-    if(id >= 0 and id < len(globals.total_pessoas)):
-        print(f'\n--- ({globals.total_pessoas[id]}) APAGADO COM SUCESSO')
+    if(id >= 0 and id < len(globals.total_colaboradores)):
+        print(f'\n--- ({globals.total_colaboradores[id]}) APAGADO COM SUCESSO')
         print('\n --- Sucesso! ---')
     else:
         print('Inválido!')
