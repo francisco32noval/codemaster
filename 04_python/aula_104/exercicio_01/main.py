@@ -3,21 +3,35 @@ import funcoes
 funcoes.limpa()
 
 
-while(True):
-    opcao = funcoes.exibirMenu()
+dicionario = {
+    'nome' : 'Francisco Noval',
+    'idade' : 24,
+    'morada' : 'Fafe'
+}
 
-    funcoes.limpa()
+print(dicionario)
 
-    if(opcao == 1): funcoes.getNovoColaborador()
-    elif(opcao == 2): funcoes.getEditarPessoa()
-    elif(opcao == 3): funcoes.getApagarPessoa()
+print()
 
-    elif(opcao == 4): funcoes.getLista(True)
-    elif(opcao == 0): 
-        funcoes.animacao('A sair')
-        break
-    else:
-        print('Opção Inválida!')
+print('==== DICIONARIO COM FOR ====\n')
 
+for i in dicionario:
+    print(f'{i}: {dicionario[i]}')
+
+
+print()
+
+print('==== DICIONARIO APENAS CHAVES ====')
+
+for i in dicionario.keys():
+    print(i)
+
+
+print()
+
+print('==== DICIONARIO APENAS CHAVES ====')
+
+for i in dicionario.values():
+    print(i)
 
 print('\n')
