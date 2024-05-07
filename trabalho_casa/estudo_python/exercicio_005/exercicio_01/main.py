@@ -47,12 +47,10 @@ while(loop <= 10):
 print()
 
 loop = 1
-
+numero = int(input('- Digita um numero inteiro positivo: '))
 while(loop <= 10):
-    numero = int(input('- Digita um numero inteiro positivo: '))
-    for i in range()
     print(f'{numero} * {loop} = {numero * loop}')
     loop += 1
 
 
-print('\n')
+print('\n\n')
