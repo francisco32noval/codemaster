@@ -7,7 +7,7 @@ class Pessoa:
         self.nif = nif
 
     def toString(self):
-        print(f'{self.nome} -> (Idade: {self.idade}) - (Morada: {self.morada}) (NIF: {self.nif})')
+        print(f'{self.nome:<25} -> (Idade: {self.idade}) - (Morada: {self.morada}) (NIF: {self.nif})')
 
     def fazerAnos(self):
         print(f'{self.nome} fez anos!')

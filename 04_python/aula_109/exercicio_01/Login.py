@@ -1,4 +1,4 @@
-class Pessoa:
+class Login:
 
     def __init__(self, nome, login, senha):
         self.nome = nome
@@ -7,3 +7,7 @@ class Pessoa:
 
     def toString(self):
         print(f'{self.nome} - (Login: {self.login}) - (Senha: {self.senha})')
+
+    def setValidade(self, aceder_login):
+        aceder_login = self.login
+        return True

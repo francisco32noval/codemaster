@@ -2,6 +2,8 @@ import time
 import os
 
 
+
+
 #Funcoes Especiais
 def limpa():
     if(os.name == "nt"): os.system("cls")
