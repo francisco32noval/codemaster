@@ -1,7 +1,5 @@
 import time
 import os
-from Pessoa import *
-
 
 
 #Funcoes Especiais
