@@ -16,7 +16,7 @@ class Produto:
    
 
 
-    def nomeJaExiste(self, novo_produto):
+    def nomeJaExiste(self, novo_produto: str):
         return self.nome.lower() == novo_produto.lower()
     
 

@@ -28,10 +28,10 @@ def registarProduto():
     print('--- Registar Produto ---\n')
 
     # 1. Buscar informações e construir objeto
-    nome = input('- Digite o nome do novo produto: ')
+    nome = input('- Digite o NOME do novo produto: ')
     if(confirmarNome(nome) == False):
-        preco = float(input('- Digite o preco deste produto: '))
-        quantidade = int(input('- Digite a quantidade deste produto: '))
+        preco = float(input('- Digite o PREÇO deste produto: '))
+        quantidade = int(input('- Digite a QUANTIDADE deste produto: '))
         globals.total_produtos.append(Produto(nome, preco, quantidade))
 
         print('\n--- Sucesso! ---')
@@ -52,22 +52,22 @@ def editarProduto():
 
 
     # MENU DE EDIÇÃO
-    if(id >= 0 and id < len(globals.total_produtos)):
+    if(0 <= id < len(globals.total_produtos)):
 
         print()
         globals.total_produtos[id].toString(id)
     
         print('\n--- Menu de Edição ---')
-        print('1 - Nome.')
+        print('\n1 - Nome.')
         print('2 - Preço.')
         print('3 - Quantidade.\n')
         print('0 - Cancelar.')
-        opcao = int(input('- Opção: '))
+        opcao = int(input('\n- Opção: '))
 
         # MUDAR NOME
         if(opcao == 1):
             nome_antigo = globals.total_produtos[id].nome
-            novo_nome = input(f'- Digita o nome para substituir ({nome_antigo}): ')
+            novo_nome = input(f'\n- Digita o nome para substituir ({nome_antigo}): ')
             if(confirmarNome(novo_nome) == False):
                 globals.total_produtos[id].setNome(novo_nome)
                 print('\n--- SUCESSO! ---')
@@ -77,7 +77,7 @@ def editarProduto():
         # MUDAR PREÇO
         elif(opcao == 2):
             preco_antigo = globals.total_produtos[id].preco
-            novo_preco = float(input(f'- Digita o preço para substituir ({preco_antigo}): '))
+            novo_preco = float(input(f'\n- Digita o preço para substituir ({preco_antigo}€): '))
             if(novo_preco > 0):
                 globals.total_produtos[id].setPreco(novo_preco)
                 print('\n--- Sucesso! ---')
@@ -87,7 +87,7 @@ def editarProduto():
         # MUDAR QUANTIDADE
         elif(opcao == 3):
             quantidade_antiga = globals.total_produtos[id].quantidade
-            nova_quantidade = int(input(f'- Digita a quantidade para substituir ({quantidade_antiga}): '))
+            nova_quantidade = int(input(f'\n- Digita a quantidade para substituir ({quantidade_antiga}): '))
             if(nova_quantidade > 0):
                 globals.total_produtos[id].setQuantidade(nova_quantidade)
                 print('\n--- Sucesso! ---')
@@ -117,11 +117,11 @@ def apagarProduto():
 
     id = int(input('\n- Digite o ID do produto que deseja apagar: ')) - 1 
 
-    if(id > 0 and id <= len(globals.total_produtos)):
+    if(0 <= id < len(globals.total_produtos)):
         produto_a_apagar = globals.total_produtos.pop(id)
         print()
         produto_a_apagar.toString(id)
-        print('\n--- SUCESSO! ---')
+        print('\n--- APAGADO COM SUCESSO! ---')
     else:
         print('\n--- ID INVÁLIDO! ---')
 
@@ -141,15 +141,46 @@ def listarProduto(titulo):
 
 # VENDER PRODUTO
 def venderProduto():
-    print('--- Lista de Produtos ---\n')
+    print('--- Vender Produto ---\n')
 
     listarProduto(False)
 
-    id = int(input('\n- Digite o ID do produto que queres vender: ')) - 1
+    id = int(input('\n- Digita o ID do produto que queres vender: ')) -1
 
-    if(id > 0 and id <= len(globals.total_produtos)):
+    if(0 <= id < len(globals.total_produtos)):
+        nome = globals.total_produtos[id].nome
+        quantidade_total = globals.total_produtos[id].quantidade
+        quantidade_vendida = int(input(f'\n- Digita a quantidade de ({nome}) que será vendida: '))
 
-        quantidade = int(input('\n- Digite a quantidade deste produto: '))
+        if(quantidade_vendida > 0 and quantidade_vendida <= quantidade_total):
+            preco = globals.total_produtos[id].preco
+            globals.total_vendas.append(Venda(nome, preco, quantidade_vendida))
+            globals.total_produtos[id].quantidade = quantidade_total - quantidade_vendida
+
+            print()
+            globals.total_vendas[id].toStringVenda(id)
+            
+            print('\n--- Sucesso! ---')
+
+        else:
+            print('\n--- Quantidade Inválida ---')
+
+    else:
+        print('\n--- ID INVÁLIDO ---')
+
+
+
+
+# LISTAR VENDAS
+def listarVendas():
+    print('--- Lista de Vendas ---\n')
+    
+
+    for v in range(len(globals.total_vendas)):
+        globals.total_vendas[v].toStringVenda(v)
+
+    print(f'\nValor total das vendas: ({Venda.valorTotalVendas():.2f} €) ')
+
 
 
 
@@ -161,12 +192,10 @@ def init():
     globals.total_produtos.append(Produto("Caderno desenho", 6.49, 6))
 
 def confirmarNome(novo_produto):
-        for p in globals.total_produtos:
-            if p.nomeJaExiste(novo_produto):
-                return True
-        return False
-
-
+    for p in globals.total_produtos:
+        if p.nomeJaExiste(novo_produto):
+            return True
+    return False
 
 
 
@@ -191,4 +220,6 @@ def animacao(frase):
         aguarde(tempo)
     limpa()
 
-def carregueEnter(): input("\nCarregue <ENTER> para continuar...")
+def carregueEnter(): 
+    input("\nCarregue <ENTER> para continuar...")
+    limpa()
