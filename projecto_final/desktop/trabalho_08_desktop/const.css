@@ -1,0 +1,46 @@
+:root{
+    --cinza_33: #333333;
+    --cinza_33_op: #333333e8;
+    --branco_ff: #FFFFFF;
+    --laranja_f9: #F9963B;
+    --preto_op: #000000cc;
+}
+
+
+
+
+/* MENU DA NAVBAR  */
+.estilo_navbar{
+    font-family: 'Poppins';
+    font-size: 16px;
+    color: var(--cinza_33);
+    font-weight: 400;
+}
+
+
+/* MENU NAVBAR COM HOVER */
+.estilo_navbar:hover{
+    font-family: 'Poppins';
+    font-size: 14px;
+    color: var(--cinza_33);
+    font-weight: 500;
+}
+
+/* SUBMENOS DA NAVBAR */
+.estilo_submenu{
+    font-family: 'Poppins';
+    font-size: 14px;
+    color: var(--branco_ff);
+    font-weight: 400;
+}
+
+
+
+/* SUBMENOS DA NAVBAR COM HOVER*/
+.estilo_submenu:hover{
+    font-family: 'Poppins';
+    font-size: 17px;
+    color: var(--branco_ff);
+    font-weight: 700;
+}
+
