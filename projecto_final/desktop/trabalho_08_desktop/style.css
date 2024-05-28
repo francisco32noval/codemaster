@@ -1,0 +1,16 @@
+
+
+/* HEADER */
+.top{
+    margin-top: 60px;
+}
+
+.top div{
+    border: 1px solid red;
+}
+
+#image_constr{
+    width: 255px;
+    height: 69px;
+}
+

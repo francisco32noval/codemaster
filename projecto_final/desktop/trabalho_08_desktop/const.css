@@ -14,16 +14,15 @@
     font-family: 'Poppins';
     font-size: 16px;
     color: var(--cinza_33);
-    font-weight: 400;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 
 /* MENU NAVBAR COM HOVER */
 .estilo_navbar:hover{
-    font-family: 'Poppins';
-    font-size: 14px;
-    color: var(--cinza_33);
-    font-weight: 500;
+    font-weight: 700;
+    
 }
 
 /* SUBMENOS DA NAVBAR */
