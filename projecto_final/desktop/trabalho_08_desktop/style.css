@@ -3,14 +3,33 @@
 /* HEADER */
 .top{
     margin-top: 60px;
+    box-sizing: border-box;
 }
 
-.top div{
-    border: 1px solid red;
-}
 
 #image_constr{
     width: 255px;
     height: 69px;
 }
 
+
+.navbar-nav .nav-link {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 5px;
+    bottom: -10px;
+    left: 0px;
+    background-color: var(--cinza_33);
+}
+
+.navbar-nav .nav-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
