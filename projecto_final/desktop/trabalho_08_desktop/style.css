@@ -1,19 +1,46 @@
+body *{
+    transition-duration: 0.5s;
+}
+
 
 
 /* HEADER */
 .top{
-    margin-top: 60px;
+    padding-top: 2.5vw;
     box-sizing: border-box;
+    /* border: 1px solid black; */
+    box-shadow: 0px 3px 5px 4px rgba(128, 128, 128, 0.91);
 }
 
 
 #image_constr{
     width: 255px;
     height: 69px;
+    transform: translate(-2.5vw, -1.5vw);
 }
 
 
-.navbar-nav .nav-link {
+
+/* NAVBAR */
+
+
+.nav-item{
+    font-family: 'Poppins';
+    font-size: 0.875rem;
+    color: var(--cinza_33);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+.navbar-nav{
+    /* border: 1px solid black; */
+    padding-left: 17px;
+    width: 100%;
+}
+
+.navbar-nav .nav-link{
+    transform: translate(0vw, 0.7vw);
     position: relative;
     display: inline-block;
 }
@@ -32,4 +59,76 @@
 .navbar-nav .nav-link:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+.dropdown-menu{
+    transform: translate(0vw, 1.5vw);
+    border-radius: 0px;
+    width: 200px;
+    background-color: var(--cinza_33_op);
+    padding: 0px;
+}
+
+
+.dropdown-divider{
+    height: 0;
+    margin: 0px;
+    overflow: hidden;
+    border-top: 2px solid white;
+    opacity: 1;
+}
+
+
+
+
+
+/* CAROUSEL */
+
+.carousel{
+    padding: 0px;
+    position: relative;
+    z-index: -1;
+}
+
+.carousel img{
+    height: 645px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: white;
+    width: 71px;
+    height: 13px; 
+}
+
+.carousel-indicators .active {
+    background-color: var(--laranja_f9); 
+}
+
+
+
+/* MAIN */
+
+
+.hr_main{
+    border: none;
+    border-top: 3px solid #F9963B;
+    opacity: 1;
+    margin: 52px auto;
+    width: 78px;
+}
+
+
+.ver_mais1{
+    width: 194px;
+    height: 46px;
+    margin-top: 55px;
+    text-transform: uppercase;
+    border-radius: 30px;
+    background-color: white;
+}
+
+
+.ver_mais1:hover{
+    background-color: var(--cinza_33);
+    color: white;
 }
