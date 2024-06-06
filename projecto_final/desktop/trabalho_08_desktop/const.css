@@ -7,42 +7,7 @@
 }
 
 
-
-
-/* MENU DA NAVBAR  */
-.estilo_navbar{
+.poppins{
     font-family: 'Poppins';
-    font-size: 1rem;
-    color: var(--cinza_33);
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-
-/* MENU NAVBAR COM HOVER */
-.estilo_navbar:hover{
-    font-weight: 700;
-    
-}
-
-/* SUBMENOS DA NAVBAR */
-.estilo_submenu{
-    font-family: 'Poppins';
-    width: 100%;
-    padding: 5px 10px;
-    font-size: 14px;
-    text-transform: uppercase;
-    color: var(--branco_ff);
-    font-weight: 400;
-}
-
-
-
-/* SUBMENOS DA NAVBAR COM HOVER*/
-.estilo_submenu:hover{
-    font-size: 17px;
-    font-weight: 700;
-    color: var(--branco_ff);
-    background-color: var(--cinza_33_op);
 }
 
