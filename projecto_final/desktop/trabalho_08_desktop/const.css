@@ -7,7 +7,46 @@
 }
 
 
+
+
 .poppins{
     font-family: 'Poppins';
+}
+
+.upper{
+    text-transform: uppercase;
+}
+
+/* MENU DA NAVBAR  */
+.estilo_navbar{
+    font-size: 1rem;
+    color: var(--cinza_33);
+    font-weight: bolder;
+}
+
+
+/* MENU NAVBAR COM HOVER */
+.estilo_navbar:hover{
+    font-weight: 700;
+    
+}
+
+/* SUBMENOS DA NAVBAR */
+.estilo_submenu{
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: var(--branco_ff);
+    font-weight: 700;
+}
+
+
+
+/* SUBMENOS DA NAVBAR COM HOVER*/
+.estilo_submenu:hover{
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--branco_ff);
+    background-color: var(--cinza_33_op);
 }
 
