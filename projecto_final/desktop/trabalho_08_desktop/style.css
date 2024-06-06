@@ -40,6 +40,7 @@ body *{
 }
 
 .navbar-nav .nav-link{
+    /* border: 1px solid black; */
     transform: translate(0vw, 0.7vw);
     position: relative;
     display: inline-block;
@@ -48,11 +49,11 @@ body *{
 .navbar-nav .nav-link::after {
     content: '';
     position: absolute;
-    width: 100%;
+    width: 90%;
     transform: scaleX(0);
     height: 5px;
     bottom: -10px;
-    left: 0px;
+    left: 3px;
     background-color: var(--cinza_33);
 }
 
