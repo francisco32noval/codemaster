@@ -4,6 +4,7 @@ body *{
 
 body{
     width: 1600px;
+    overflow-x: hidden;
 }
 
 
@@ -34,7 +35,7 @@ body{
     font-family: 'Poppins';
     font-size: 0.87rem;
     color: var(--cinza_33);
-    font-weight: 500;
+    font-weight: 300;
     text-transform: uppercase;
 }
 
@@ -43,7 +44,7 @@ body{
     /* border: 1px solid black; */
     padding-left: 17px;
     padding-bottom: 0.8vw;
-    width: 100%;
+    box-sizing: border-box;
 }
 
 .navbar-nav .nav-link{
