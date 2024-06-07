@@ -286,8 +286,6 @@ footer{
     border: none;
     border-top: 3px solid var(--branco_ff);
     opacity: 1;
-    margin: auto;
-    margin-top: 135px;
 }
 
 
@@ -301,7 +299,18 @@ footer{
     color: var(--branco_ff);
 }
 
+.fb_footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .facebook > div:nth-child(1){
     background-color: rgba(0, 0, 0, 0.45);
+}
+
+.fb_1{
+    font-size: 29px;
 }
 
