@@ -3,13 +3,15 @@ body *{
 }
 
 body{
-    width: 1600px;
+    width: 100%;
     overflow-x: hidden;
 }
 
 
+
 /* HEADER */
 .top{
+    width: 1600px;
     padding-top: 2.5vw;
     box-sizing: border-box;
     /* border: 1px solid black; */
@@ -22,14 +24,16 @@ body{
 #image_constr{
     width: 15.9vw;
     height: 2.7vw;
-    transform: translate(-2.5vw, -0.6vw);
+    transform: translate(-2vw, -0.6vw);
 }
 
 
 
 /* NAVBAR */
 
-
+.nav_fluid{
+    width: 1000px;
+}
 
 .nav-item{
     font-family: 'Poppins';
@@ -66,7 +70,7 @@ body{
 
 .navbar-nav .nav-link:hover::after {
     transform: scaleX(1);
-    transform-origin: bottom left;
+    /* transform-origin: bottom left; */
 }
 
 .dropdown-menu{
@@ -99,6 +103,7 @@ body{
 }
 
 .carousel img{
+    width: 100%;
     height: 645px;
 }
 
@@ -210,6 +215,7 @@ body{
 footer{
     height: 1602px;
     margin-top: 100px;
+    padding: 0px;
 }
 
 
@@ -270,6 +276,32 @@ footer{
     font-size: 20px;
 }
 
-/* MAPA */
 
+
+
+
+/* FACEBOOK */
+
+.hr_fb{
+    border: none;
+    border-top: 3px solid var(--branco_ff);
+    opacity: 1;
+    margin: auto;
+    margin-top: 135px;
+}
+
+
+
+.facebook{
+    background-image: url('images/FooterFacebook.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 565px;
+    color: var(--branco_ff);
+}
+
+.facebook > div:nth-child(1){
+    background-color: rgba(0, 0, 0, 0.45);
+}
 
