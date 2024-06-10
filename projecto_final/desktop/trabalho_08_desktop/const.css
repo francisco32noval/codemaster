@@ -9,13 +9,19 @@
 
 
 
+.poppins{
+    font-family: 'Poppins';
+}
+
+.upper{
+    text-transform: uppercase;
+}
+
 /* MENU DA NAVBAR  */
 .estilo_navbar{
-    font-family: 'Poppins';
     font-size: 1rem;
     color: var(--cinza_33);
-    font-weight: 600;
-    text-transform: uppercase;
+    font-weight: bolder;
 }
 
 
@@ -27,21 +33,19 @@
 
 /* SUBMENOS DA NAVBAR */
 .estilo_submenu{
-    font-family: 'Poppins';
     width: 100%;
     padding: 5px 10px;
     font-size: 14px;
-    text-transform: uppercase;
     color: var(--branco_ff);
-    font-weight: 400;
+    font-weight: 700;
 }
 
 
 
 /* SUBMENOS DA NAVBAR COM HOVER*/
 .estilo_submenu:hover{
-    font-size: 17px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 900;
     color: var(--branco_ff);
     background-color: var(--cinza_33_op);
 }
