@@ -17,6 +17,18 @@
     text-transform: uppercase;
 }
 
+
+.titulo{
+    font-size: 38px;
+}
+
+.texto{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+
 /* MENU DA NAVBAR  */
 .estilo_navbar{
     font-size: 1rem;
@@ -33,7 +45,6 @@
 
 /* SUBMENOS DA NAVBAR */
 .estilo_submenu{
-    width: 100%;
     padding: 5px 10px;
     font-size: 14px;
     color: var(--branco_ff);
