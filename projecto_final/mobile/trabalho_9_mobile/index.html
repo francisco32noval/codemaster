@@ -29,64 +29,103 @@
     
         <!-- NAVBAR -->
 
-        <div class="row top">
+        <div class="row top mt-3">
 
-            <div class="col imagem"><img src="imagens/logo.png" alt="logo" class="w-100"></div>
+            <div class="col p-0 box_size d-flex justify-content-around">
 
-            <div class="col nave d-flex justify-content-end">
+                <div class="text-center logo"><img src="imagens/logo.png" alt="logo" class="w-75 img-fluid"></div>
 
-                <nav class="navbar navbar-expand-lg">
+                <!-- NAVBAR -->
 
-                    <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg nave p-0">
+                    <div class="nave container-fluid px-3 d-flex justify-content-end">
 
-                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <button class="navbar-toggler border_none px-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
-                            <span class="btn-close btn-close-custom" aria-hidden="true"></span>
                         </button>
 
-                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                            <ul class="navbar-nav">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                                 <li class="nav-item">
                                     <a class="nav-link active poppins upper" aria-current="page" href="#">Home</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link poppins upper" href="#">quem somos</a>
+                                    <a class="nav-link poppins upper" aria-current="page" href="#">quem somos</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link poppins upper" href="#">sócios</a>
+                                    <a class="nav-link poppins upper" aria-current="page" href="#">sócios</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link poppins upper" href="#">notícias</a>
+                                    <a class="nav-link poppins upper" aria-current="page" href="#">notícias</a>
                                 </li>
 
                                 <li class="nav-item">
-                                    <a class="nav-link poppins upper" href="#">destaques</a>
+                                    <a class="nav-link poppins upper" aria-current="page" href="#">destaques</a>
                                 </li>
 
+                                <!-- Dropdown Menu -->
                                 <li class="nav-item dropdown">
-
-                                    <a class="nav-link poppins upper" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="nav-link poppins upper" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
                                         empreendimentos
                                     </a>
+                                    <ul class="estilo_submenu dropdown-menu">
+                                        <li>
+                                            <a class="dropdown-item estilo_submenu poppins" href="#">canidelo - v.n.gaia</a>
+                                        </li>
 
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item poppins upper" href="#">canidelo - v. n. gaia</a></li>
-                                        <li><a class="dropdown-item poppins upper" href="#">barranha - sª da hora matosinhos</a></li>
-                                        <li><a class="dropdown-item poppins upper" href="#">contumil - porto</a></li>
-                                        <li><a class="dropdown-item poppins upper" href="#">contumil - vila do conde</a></li>
-                                        <li><a class="dropdown-item poppins upper" href="#">contumil - famalicão</a></li>
-                                        <li><a class="dropdown-item poppins upper" href="#">contumil - madalena - v. n. gaia</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item estilo_submenu poppins" href="#">barranha - <br> s.ª da hora
+                                                matosinhos 
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item estilo_submenu poppins" href="#">contumil - porto</a>
+                                        </li>
+
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item estilo_submenu poppins" href="#">vila do conde</a>
+                                        </li>
+
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item estilo_submenu poppins" href="#">famalicão</a>
+                                        </li>
+
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+
+                                        <li>
+                                            <a class="dropdown-item estilo_submenu poppins" href="#">madalena v. n. de gaia</a>
+                                        </li>
+
                                     </ul>
-                                            
-
                                 </li>
-
+                                
                                 <li class="nav-item">
-                                    <a class="nav-link poppins upper" href="#">centro de férias</a>
+                                    <a class="nav-link poppins upper" aria-current="page" href="#">centro de férias</a>
                                 </li>
 
                                 <li class="nav-item">
@@ -96,9 +135,7 @@
                             </ul>
 
                         </div>
-
                     </div>
-
                 </nav>
 
             </div>
