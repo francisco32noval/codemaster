@@ -1,6 +1,4 @@
-body{
-    width: 377px;
-}
+
 
 
 
@@ -16,9 +14,13 @@ header > div{
 
 
 
+/* NAVBAR */
+
+
+
+
 
 /* CAROUSEL */
-
 
 
 
@@ -41,3 +43,35 @@ header > div{
 .carousel-indicators .active{
     background-color: var(--laranja_f9);
 }
+
+
+
+
+
+/* MAIN */
+
+.w_main{
+    width: 286px;
+}
+
+.hr_main{
+    border: none;
+    border-top: 3px solid #F9963B;
+    opacity: 1;
+    margin: 30px auto;
+    width: 47px;
+}
+
+
+.ver_mais1{
+    width: 105px;
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid black;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 5px;
+}
+
