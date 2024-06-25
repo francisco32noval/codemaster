@@ -16,9 +16,17 @@ header > div{
 
 /* NAVBAR */
 
+.collapse{
+    /* position: absolute; */
+    /* z-index: 1; */
 
+    background-color: var(--cinza_33_op_75);
+    width: 100%;
+}
 
-
+.navbar-nav a{
+    color: white;
+}
 
 /* CAROUSEL */
 
@@ -74,4 +82,68 @@ header > div{
     font-weight: 500;
     padding: 5px;
 }
+
+.ver_mais1:hover, .ver_mais_destaques:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+/* CARDS DESTAQUES */
+
+
+
+.card{
+    border: 1px solid var(--cinza_33);
+    border-radius: 0px;
+    padding: 0px;
+    margin: 10% 0px;
+    height: 384px;
+    width: 286px;
+}
+
+
+.card img{
+    width: 100%;
+    border-radius: 0px;
+}
+
+.card-body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.card-body div:nth-child(1){
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+.card-body div:nth-child(2){
+    color: var(--cinza_33);
+    font-size: 13px;
+
+}
+
+
+.ver_mais_destaques{
+    width: 105px;
+    height: 29px;
+    border-radius: 15px;
+    background-color: var(--branco_ff);
+    font-size: 15px;
+
+    transform: translate(0px, 25px);
+}
+
+
+
+
+/* FOOTER */
 
