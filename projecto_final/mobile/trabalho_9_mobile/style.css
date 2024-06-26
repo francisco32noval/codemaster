@@ -148,6 +148,10 @@ header > div{
 /* FOOTER */
 
 
+footer{
+    width: 377px;
+}
+
 
 .hr_contactos{
     border: none;
@@ -169,12 +173,12 @@ header > div{
 
 
 
-.contactos > div:nth-child(1){
+.contactos > div:nth-child(1), .facebook > div:nth-child(1){
     background-color: rgba(0, 0, 0, 0.45);
 }
 
 
-.contactos img{
+.contactos img, .facebook img{
     height: 6vw;
 }
 
@@ -183,4 +187,29 @@ header > div{
     border: 2px solid white;
     border-radius: 50%;
     box-sizing: border-box;
+}
+
+
+.facebook{
+    background-image: url('imagens/footerFacebook.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--branco_ff);
+    height: 323px;
+}
+
+
+.hr_fb{
+    margin-top: 20vw;
+    border: none;
+    border-top: 2px solid var(--branco_ff);
+    opacity: 1;
+}
+
+
+.facebook a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
 }
