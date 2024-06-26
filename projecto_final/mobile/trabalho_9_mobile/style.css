@@ -147,3 +147,40 @@ header > div{
 
 /* FOOTER */
 
+
+
+.hr_contactos{
+    border: none;
+    border-top: 3px solid var(--branco_ff);
+    opacity: 1;
+    margin: auto;
+    margin-top: 60px;
+    width: 47px;
+}
+
+.contactos{
+    background-image: url('imagens/footerContactos.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--branco_ff);
+    height: 573px;
+}
+
+
+
+.contactos > div:nth-child(1){
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+
+.contactos img{
+    height: 6vw;
+}
+
+.icon{
+    padding: 2vw;
+    border: 2px solid white;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
