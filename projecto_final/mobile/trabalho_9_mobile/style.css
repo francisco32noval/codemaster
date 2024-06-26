@@ -74,12 +74,14 @@ header > div{
 }
 
 .dropdown-item{
+    font-size: 14px;
     width: 85%;
     margin: auto;
 }
 
 .dropdown-menu a:hover{
     color: var(--laranja_f9);
+    font-size: 15px;
 }
 
 /* CAROUSEL */
