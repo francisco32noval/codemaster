@@ -1,9 +1,12 @@
 
-
+body{
+    max-width: 377px;
+}
 
 
 .top{
     box-shadow: 0px 3px 2px 2px var(--cinza_33_op_75);
+    width: 377px;
 }
 
 
@@ -13,19 +16,70 @@ header > div{
 
 
 
-
 /* NAVBAR */
 
-.collapse{
-    /* position: absolute; */
-    /* z-index: 1; */
 
+
+
+.navbar-nav{
+    position: absolute;
+    z-index: 10;
+    transform: translate(-275px, 15px);
+    width: 377px;
     background-color: var(--cinza_33_op_75);
-    width: 100%;
+}
+
+.navbar-nav:active{
+    position: absolute;
 }
 
 .navbar-nav a{
     color: white;
+}
+
+.dropdown-divider{
+    border: none;
+    border-top: 2px solid white;
+    width: 100%;
+}
+
+.nav-item{
+    padding-left: 30px;
+}
+
+.nav-item a:hover{
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.hr_empr{
+    margin: auto;
+    border: none;
+    border-top: 2px solid var(--cinza_33);
+    opacity: 1;
+    width: 80%;
+}
+
+.dropdown-menu{
+
+    border-radius: 0px;
+    transform: translate(-30px, 0px);
+    width: 370px;
+}
+
+.dropdown-menu a{
+    color: var(--cinza_33);
+    padding: 10px;
+}
+
+.dropdown-item{
+    width: 85%;
+    margin: auto;
+}
+
+.dropdown-menu a:hover{
+    color: var(--laranja_f9);
 }
 
 /* CAROUSEL */
