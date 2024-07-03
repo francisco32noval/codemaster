@@ -1,7 +1,13 @@
-.quem_somos img{
-    width: 35%;
+.image-column img {
+    width: 90%;
+    height: 33vw;
 }
 
 .texto_quem{
     font-size: 1.125em;
 }
+
+.border_1{
+    border: 2px solid black;
+}
+
