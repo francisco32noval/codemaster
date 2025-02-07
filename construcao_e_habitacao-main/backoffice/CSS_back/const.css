@@ -1,0 +1,36 @@
+:root{
+    --cinza_33: rgb(51, 51, 51);
+    --cinza_33_op: #333333e8;
+    --cinza_33_op75: #333333bf;
+    --branco_ff: #FFFFFF;
+    --cor_tema: #f45151;
+    --preto_op: #000000cc;
+}
+
+
+.upper{
+    text-transform: uppercase;
+}
+
+.poppins{
+    font-family: 'Poppins';
+}
+
+table, th, td{
+    text-align: center;
+    border: 5px ridge var(--cor_tema);
+    border-collapse: collapse;
+    margin: auto;
+    padding: 10px 25px;
+}
+
+
+.editar{
+    border: 2px solid var(--cor_tema);
+    background-color: white;
+}
+
+.editar:hover{
+    border: 2px solid var(--cinza_33);
+    color: var(--cor_tema);
+}
